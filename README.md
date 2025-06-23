@@ -11,11 +11,7 @@
 
 - 🌱 I’m currently learning **React Native, Next.js, Spring Boot, Docker**
 
-- 👯 I’m looking to collaborate on [https://github.com/2710-bhushan/BOI-KISOK-SOFTWARE](https://github.com/2710-bhushan/BOI-KISOK-SOFTWARE)
-
-- 🤝 I’m looking for help with [https://github.com/2710-bhushan/BOI-KISOK-SOFTWARE](https://github.com/2710-bhushan/BOI-KISOK-SOFTWARE)
-
-- 👨‍💻 All of my projects are available at [https://drive.google.com/file/d/1w1NdOefh7DFuuycBsYLyMq9ElJ7A9Yl5/view?usp=sharing](https://drive.google.com/file/d/1w1NdOefh7DFuuycBsYLyMq9ElJ7A9Yl5/view?usp=sharing)
+- 👨‍💻 All of my projects are available at [https://github.com/2710-bhushan/](https://github.com/2710-bhushan/)
 
 - 📝 I regularly write articles on [-](-)
 
