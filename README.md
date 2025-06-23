@@ -19,7 +19,41 @@
 
 - 📫 How to reach me **bhushaningale2006@gmail.com**
 
-- 📄 Know about my experiences [https://drive.google.com/file/d/1w1NdOefh7DFuuycBsYLyMq9ElJ7A9Yl5/view?usp=sharing](https://drive.google.com/file/d/1w1NdOefh7DFuuycBsYLyMq9ElJ7A9Yl5/view?usp=sharing)
+## 💬 Ask me about
+- 🚀 React, Vue, GSAP  
+- ☕ Java, Spring Boot  
+- 🌐 Full Stack Development  
+- 🔗 REST APIs, MySQL  
+- 📱 Android Development  
+- 🎨 UI Animations
+
+## 📫 How to reach me
+- bhushaningale2006@gmail.com
+
+## 📄 Know about my experiences
+
+### 🚀 Projects and Work
+- **Bank-Kiosk Conversion**  
+  *A smart solution for bank kiosk software conversion, improving transaction efficiency and customer interaction.*  
+  🔗 [View Project](https://github.com/2710-bhushan/BOI-KISOK-SOFTWARE)
+
+---
+
+### 🏆 Resume
+You can explore my full work experience, education, and project portfolio in my resume.  
+📄 [View My Resume](https://drive.google.com/file/d/1w1NdOefh7DFuuycBsYLyMq9ElJ7A9Yl5/view?usp=sharing)
+
+---
+
+### 💼 Current Skills & Stack
+- **Frontend:** React, Vue, GSAP, HTML5, CSS3, Bootstrap, Tailwind  
+- **Backend:** Java, Spring Boot, Node.js, Express  
+- **Database:** MySQL, MongoDB  
+- **Mobile:** Android, React Native  
+- **DevOps:** Docker, Jenkins  
+- **Currently Learning:** Next.js, Docker, Kubernetes
+
+---
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
