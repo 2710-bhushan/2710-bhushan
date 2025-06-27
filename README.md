@@ -49,18 +49,22 @@ I am a passionate **Full Stack Developer** from India 🇮🇳 with a strong foc
 
 ---
 
-## 🛠️ Tech Stack
+<!-- ⚙️ Tech Stack with Icons and Gradient Background -->
+<div align="center" style="background: linear-gradient(to right, #ff512f, #dd2476); border-radius: 15px; padding: 20px; color: white;">
 
-<div align="center">
+### 🚀 Tech Stack
 
-### 🚀 Frontend
-<img src="https://skillicons.dev/icons?i=react,vue,bootstrap,tailwind,html,css,js" />
+#### 🖼️ Frontend
+<img src="https://skillicons.dev/icons?i=react,vue,bootstrap,tailwind,html,css,js" height="70" />
 
-### 💻 Backend
-<img src="https://skillicons.dev/icons?i=nodejs,java,django,php,mongodb,mysql" />
+#### 💻 Backend
+<img src="https://skillicons.dev/icons?i=nodejs,java,django,php,mongodb,mysql" height="70" />
 
-### 🧑‍💻 Languages
-<img src="https://skillicons.dev/icons?i=java,python,js,c,cpp" />
+#### 🧑‍💻 Programming Languages
+<img src="https://skillicons.dev/icons?i=java,python,js,c,cpp" height="70" />
+
+#### ☁️ Cloud & Tools
+<img src="https://skillicons.dev/icons?i=aws,docker,git,github,vscode,postman" height="70" />
 
 </div>
 
