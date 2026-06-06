@@ -1,144 +1,307 @@
-<!-- Profile Header with Gradient Background and Animated Typing Text -->
+<div align="center">
 
-<div align="center" style="background: linear-gradient(to right, #0f2027, #203a43, #2c5364); padding: 40px 20px; border-radius: 20px; color: white;">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=200&section=header&text=Bhushan%20Ingale&fontSize=70&fontColor=ffffff&fontAlignY=38&desc=Full%20Stack%20Developer%20%7C%20AI%20Enthusiast%20%7C%20Builder&descAlignY=58&descSize=20&animation=fadeIn" />
 
-  <h1 style="font-weight: bold;">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=35&pause=1000&color=00FFFF&center=true&vCenter=true&width=600&height=70&lines=Hi+%F0%9F%91%8B%2C+I'm+Bhushan+Ingale;I+Am+Full+Stack+Developer+%F0%9F%92%BB;" alt="Typing SVG">
-  </h1>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=28&pause=1000&color=38BCF7&center=true&vCenter=true&random=false&width=700&height=60&lines=Building+Things+That+Matter+%F0%9F%9A%80;Full+Stack+%7C+AI+%7C+Open+Source;React+%7C+Spring+Boot+%7C+Python+%7C+Java;Always+Learning%2C+Always+Shipping+%E2%9A%A1" alt="Typing SVG" />
 
-  <p align="center" style="font-weight: bold;">
-    <img src="https://komarev.com/ghpvc/?username=2710-bhushan&label=PROFILE+VIEWS&color=FF69B4&style=for-the-badge" alt="Profile Views" />
-    <a href="https://twitter.com/bhushan27102005" target="_blank">
-      <img src="https://img.shields.io/badge/FOLLOW%20ON%20TWITTER-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter" />
-    </a>
-    <a href="https://github.com/2710-bhushan" target="_blank">
-      <img src="https://img.shields.io/github/followers/2710-bhushan?label=GITHUB%20FOLLOWERS&style=for-the-badge&color=181717&logo=github" alt="GitHub Followers" />
-    </a>
-    <a href="https://linkedin.com/in/bhushan-ingale-3717212a7" target="_blank">
-      <img src="https://img.shields.io/badge/CONNECT%20ON%20LINKEDIN-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-    </a>
-    <a href="mailto:bhushaningale2006@gmail.com">
-      <img src="https://img.shields.io/badge/CONTACT%20ME-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
-    </a>
-  </p>
+<br/>
+
+<a href="https://linkedin.com/in/bhushan-ingale-3717212a7"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>&nbsp;
+<a href="https://twitter.com/bhushan27102005"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"/></a>&nbsp;
+<a href="mailto:bhushaningale2006@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>&nbsp;
+<a href="https://instagram.com/bhushan_ingale_27"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/></a>&nbsp;
+<a href="https://drive.google.com/file/d/1w1NdOefh7DFuuycBsYLyMq9ElJ7A9Yl5/view?usp=sharing"><img src="https://img.shields.io/badge/Resume-4285F4?style=for-the-badge&logo=googledrive&logoColor=white"/></a>
+
+<br/>
+
+<img src="https://komarev.com/ghpvc/?username=2710-bhushan&style=for-the-badge&color=blueviolet&label=PROFILE+VIEWS" />
+<img src="https://img.shields.io/github/followers/2710-bhushan?label=FOLLOWERS&style=for-the-badge&color=0891b2&labelColor=1c1917" />
 
 </div>
 
 ---
-## 🏆 **GitHub Trophy Showcase**
+
+## 🧑‍💻 About Me
+
+<img align="right" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="180" alt="coding gif" style="border-radius:12px"/>
+
+I'm a **Full Stack Developer from Pune, India 🇮🇳** passionate about crafting scalable web apps, AI-powered tools, and clean user experiences.
+
+- 🔭 **Currently Building:** Bank Kiosk Conversion Software & AI-Gesture Tools
+- 🌱 **Currently Learning:** React Native · Next.js · Spring Boot · Docker
+- 🤖 **AI Explorer:** OpenCV, MediaPipe, Generative AI
+- 💡 **Internship Track:** Java & Android Development
+- 🎯 **Goal:** Ship products that solve real problems
+- 📫 **Reach Me:** [bhushaningale2006@gmail.com](mailto:bhushaningale2006@gmail.com)
+
+<br clear="right"/>
+
+---
+
+## 🏆 GitHub Trophy Showcase
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=2710-bhushan&theme=gruvbox&margin-w=15&no-frame=true&column=7" />
-</div>
-
----
-## 🚀 **About Me**
-
-<div align="center" style="padding: 20px; background: linear-gradient(to right, #1e3c72, #2a5298); border-radius: 15px; color: white; font-weight: bold;">
-
-<img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="200" align="right" style="border-radius: 15px; margin-left: 20px;">
-
-I am a passionate **Full Stack Developer** from India 🇮🇳 focused on building dynamic, scalable web applications and delivering **beautiful UI/UX experiences.**
-
-* 🔭 **Currently Working On:** [**Bank-Kiosk Conversion Software**](https://github.com/2710-bhushan/BOI-KISOK-SOFTWARE)
-* 🌱 **Currently Learning:** React Native | Next.js | Spring Boot | Docker
-* 💼 **Resume:** [**View Here**](https://drive.google.com/file/d/1w1NdOefh7DFuuycBsYLyMq9ElJ7A9Yl5/view?usp=sharing)
-* 📢 **Reach Me:** [bhushaningale2006@gmail.com](mailto:bhushaningale2006@gmail.com)
-
+  <img src="https://github-profile-trophy.vercel.app/?username=2710-bhushan&theme=radical&no-frame=true&no-bg=true&margin-w=6&column=7" alt="GitHub Trophies"/>
 </div>
 
 ---
 
-<!-- ⚙️ Tech Stack with Icons and Gradient Background -->
-
-<div align="center" style="background: linear-gradient(to right, #ff512f, #dd2476); border-radius: 15px; padding: 20px; color: white; font-weight: bold;">
-
-### 🚀 **Tech Stack**
-
-#### 🗾️ **Frontend**
-
-<img src="https://skillicons.dev/icons?i=react,vue,bootstrap,tailwind,html,css,js" height="80" />
-
-#### 💻 **Backend**
-
-<img src="https://skillicons.dev/icons?i=nodejs,java,django,php,mongodb,mysql" height="80" />
-
-#### 🧑‍💻 **Programming Languages**
-
-<img src="https://skillicons.dev/icons?i=java,python,js,c,cpp" height="80" />
-
-#### ☁️ **Cloud & Tools**
-
-<img src="https://skillicons.dev/icons?i=aws,docker,git,github,vscode,postman" height="80" />
-
-</div>
-
----
-
-
-
-## 📈 **GitHub Analytics**
+## ⚡ Tech Stack
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=2710-bhushan&show_icons=true&theme=radical&bg_color=30,0d0d0d,1a1a2e&title_color=38BCF7&text_color=ffffff&icon_color=F8D847&border_radius=15" height="180em" />
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=2710-bhushan&theme=radical&background=0d0d0d&border=DD2727&currStreakNum=38BCF7&sideNums=38BCF7&currStreakLabel=38BCF7&sideLabels=38BCF7&dates=FFFFFF&border_radius=15" height="180em" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=2710-bhushan&layout=compact&theme=radical&bg_color=30,0d0d0d,1a1a2e&title_color=38BCF7&text_color=ffffff&border_radius=15&langs_count=8" height="180em" />
+**🎨 Frontend**
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=2710-bhushan&theme=react-dark&bg_color=0d1117&hide_border=true&area=true&area_color=38BCF7&line=38BCF7&point=F8D847" alt="Activity Graph" />
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vue](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+
+**🔧 Backend**
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
+![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+
+**💻 Languages**
+
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+
+**☁️ Cloud & DevOps & Tools**
+
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+
+**🤖 AI / CV Libraries**
+
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
+![MediaPipe](https://img.shields.io/badge/MediaPipe-0097A7?style=for-the-badge&logo=google&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 
 </div>
 
 ---
 
-## 🌟 **Featured Projects**
-
-### 🚀 **Bank-Kiosk Conversion Software**
-
-[![Bank Kiosk](https://img.shields.io/badge/PROJECT-Bank_Kiosk_Conversion-blue?style=for-the-badge\&logo=github\&logoColor=white)](https://github.com/2710-bhushan/BOI-KISOK-SOFTWARE)
-
-> A smart solution for bank kiosk software conversion, improving transaction efficiency and customer interaction.
-
----
-
-### 🚀 **Customer Service Portal**
-
-[![Customer Service](https://img.shields.io/badge/PROJECT-Customer_Service_Portal-green?style=for-the-badge\&logo=github\&logoColor=white)](https://github.com/2710-bhushanCustomer_Service_Protal)
-
-> An interactive web-based portal for efficient customer support, live tracking, and ticket management.
-
----
-
-### 🎮 **Online Gaming Website**
-
-[![Gaming Website](https://img.shields.io/badge/PROJECT-Online_Gaming_Website-purple?style=for-the-badge\&logo=github\&logoColor=white)](https://github.com/2710-bhushan/Online-Game-Playing)
-
-> A modern gaming platform offering multiplayer games, leaderboards, and real-time gaming experience.
-
----
-
-## 🤝 **Let's Connect!**
+## 🌟 Featured Projects
 
 <div align="center">
-  <a href="https://twitter.com/bhushan27102005" target="_blank">
-    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />
-  </a>
-  <a href="https://linkedin.com/in/bhushan-ingale-3717212a7" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  <a href="https://instagram.com/bhushan_ingale_27" target="_blank">
-    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
-  </a>
-  <a href="https://www.facebook.com/profile.php?id=61553221501604" target="_blank">
-    <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" />
-  </a>
-  <a href="mailto:bhushaningale2006@gmail.com" target="_blank">
-    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>
+<table>
+<tr>
+<td width="50%">
+
+### 🏦 Bank Kiosk Conversion Software
+[![Repo](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat-square&logo=github)](https://github.com/2710-bhushan/Boi-Kiosk-Software)
+
+A Java-based enterprise solution for converting legacy bank kiosk workflows into modern, efficient digital processes. Improves transaction speed and customer experience.
+
+**Stack:** `Java` `Spring Boot` `MySQL`
+
+</td>
+<td width="50%">
+
+### 🤖 AI-Powered Hand Gesture Calculator
+[![Repo](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat-square&logo=github)](https://github.com/2710-bhushan/AI-Powered-Hand-Gesture-Calculator)
+
+Real-time AI calculator that recognizes hand gestures via webcam using OpenCV and MediaPipe — no touch required.
+
+**Stack:** `Python` `OpenCV` `MediaPipe`
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 🎮 Online Gaming Website
+[![Repo](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat-square&logo=github)](https://github.com/2710-bhushan/Online-Game-Playing)
+[![Stars](https://img.shields.io/github/stars/2710-bhushan/Online-Game-Playing?style=flat-square&color=gold)](https://github.com/2710-bhushan/Online-Game-Playing/stargazers)
+
+A modern gaming platform featuring multiplayer-ready games, leaderboards, and a responsive UI for seamless in-browser gaming.
+
+**Stack:** `HTML` `CSS` `JavaScript`
+
+</td>
+<td width="50%">
+
+### 🏥 SwasthyaSetu — Health Bridge
+[![Repo](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat-square&logo=github)](https://github.com/2710-bhushan/SwasthyaSetu)
+
+A healthcare-focused web application bridging patients and providers with intuitive UI and service accessibility features.
+
+**Stack:** `HTML` `CSS` `JavaScript`
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 🎯 Math Solver via Hand Gestures
+[![Repo](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat-square&logo=github)](https://github.com/2710-bhushan/-Math-Solver-using-OpenCV-and-MediaPipe)
+
+Solves math problems drawn in the air using computer vision — gesture tracking + expression parsing in real-time.
+
+**Stack:** `Python` `OpenCV` `MediaPipe`
+
+</td>
+<td width="50%">
+
+### 🎨 Personal Portfolio
+[![Repo](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat-square&logo=github)](https://github.com/2710-bhushan/Bhushan-Portfolio)
+
+A modern portfolio built with TypeScript showcasing projects, skills, and contact information with clean design.
+
+**Stack:** `TypeScript` `React` `CSS`
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 🎬 Movie Download Website
+[![Repo](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat-square&logo=github)](https://github.com/2710-bhushan/Movie-Download-WebSite)
+[![Stars](https://img.shields.io/github/stars/2710-bhushan/Movie-Download-WebSite?style=flat-square&color=gold)](https://github.com/2710-bhushan/Movie-Download-WebSite/stargazers)
+
+A full-featured movie listing site with search, category filters, and a responsive, visually rich interface.
+
+**Stack:** `HTML` `CSS` `JavaScript`
+
+</td>
+<td width="50%">
+
+### 🎫 Customer Service Portal
+[![Repo](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat-square&logo=github)](https://github.com/2710-bhushan/Customer_Service_Protal)
+[![Stars](https://img.shields.io/github/stars/2710-bhushan/Customer_Service_Protal?style=flat-square&color=gold)](https://github.com/2710-bhushan/Customer_Service_Protal/stargazers)
+
+Web-based customer support portal with ticket management, live tracking, and an admin dashboard.
+
+**Stack:** `HTML` `CSS` `JavaScript`
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 🏦 PHP Internet Banking System
+[![Repo](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat-square&logo=github)](https://github.com/2710-bhushan/PHP_Internet_Banking)
+[![Stars](https://img.shields.io/github/stars/2710-bhushan/PHP_Internet_Banking?style=flat-square&color=gold)](https://github.com/2710-bhushan/PHP_Internet_Banking/stargazers)
+
+A full internet banking simulation system with account management, transactions, and authentication — powered by PHP and MySQL.
+
+**Stack:** `PHP` `MySQL` `HTML`
+
+</td>
+<td width="50%">
+
+### ☕ Java Internship Tasks
+[![Repo](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat-square&logo=github)](https://github.com/2710-bhushan/Java-Intership-Task)
+
+Collection of Java mini-projects: ATM Interface, Online Exam System, Number Guessing Game, Train Ticket System, and more.
+
+**Stack:** `Java` `OOP` `File I/O`
+
+</td>
+</tr>
+</table>
+</div>
+
+---
+
+## 📊 GitHub Analytics
+
+<div align="center">
+
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=2710-bhushan&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&border_radius=12" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=2710-bhushan&layout=compact&langs_count=10&theme=tokyonight&hide_border=true&border_radius=12" />
+
+<br/>
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=2710-bhushan&theme=tokyonight&hide_border=true&border_radius=12&date_format=M%20j%5B%2C%20Y%5D" />
+
+<br/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=2710-bhushan&theme=tokyo-night&hide_border=true&area=true&radius=12" />
+
+</div>
+
+---
+
+## 🐍 Contribution Snake
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/2710-bhushan/2710-bhushan/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
+</div>
+
+> **Note:** To enable the snake animation, add a GitHub Actions workflow to your profile repo that generates the SVG automatically. See [platane/snk](https://github.com/platane/snk) for setup instructions.
+
+---
+
+## 🎯 Skill Proficiency
+
+```text
+JavaScript / TypeScript  ████████████████████  90%
+Java                     ████████████████░░░░  80%
+Python                   ███████████████░░░░░  75%
+React / Vue              ████████████████░░░░  80%
+PHP / MySQL              ████████████░░░░░░░░  60%
+C / C++                  ██████████░░░░░░░░░░  50%
+Docker / AWS             ████████░░░░░░░░░░░░  40%
+OpenCV / MediaPipe       ████████████░░░░░░░░  60%
+```
+
+---
+
+## 📌 Quick Stats
+
+<div align="center">
+
+| 🏗️ Projects | 🌐 Languages | ⭐ Total Stars | 🤝 Internships |
+|:-----------:|:-----------:|:-------------:|:-------------:|
+| 20+ | 7 | 10+ | 2 |
+
+</div>
+
+---
+
+## 🤝 Let's Connect & Collaborate
+
+<div align="center">
+
+I'm always open to interesting conversations, collaboration, or just saying hi!
+
+<a href="https://linkedin.com/in/bhushan-ingale-3717212a7">
+  <img src="https://img.shields.io/badge/LinkedIn-Let's_Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+</a>&nbsp;
+<a href="https://twitter.com/bhushan27102005">
+  <img src="https://img.shields.io/badge/Twitter-Follow_Me-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"/>
+</a>&nbsp;
+<a href="mailto:bhushaningale2006@gmail.com">
+  <img src="https://img.shields.io/badge/Gmail-Drop_a_Mail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
+</a>&nbsp;
+<a href="https://instagram.com/bhushan_ingale_27">
+  <img src="https://img.shields.io/badge/Instagram-Follow-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
+</a>
+
+<br/><br/>
+
+<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Dev Quote"/>
+
 </div>
 
 ---
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=120&section=footer&text=Thanks+for+visiting!&fontSize=28&fontColor=ffffff&fontAlignY=65&animation=fadeIn" />
 </div>
