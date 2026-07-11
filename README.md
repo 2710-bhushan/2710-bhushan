@@ -1,28 +1,28 @@
 <div align="center">
 
-<!-- ═══════════════════════ HERO DECK BANNER ═══════════════════════ -->
+<!-- ═══════════════════════ CYBER DECK HEADER ═══════════════════════ -->
 <a href="https://2710-bhushan.github.io/2710-bhushan/" target="_blank">
-  <img src="https://raw.githubusercontent.com/2710-bhushan/2710-bhushan/main/assets/banner.svg" width="100%" alt="Bhushan Ingale - Cyber Deck Banner"/>
+  <img src="https://raw.githubusercontent.com/2710-bhushan/2710-bhushan/main/assets/banner.svg" width="100%" alt="Bhushan Ingale - Interactive Portfolio Launch Deck"/>
 </a>
 
 <p align="center">
-  <i>💡 <b>Interact:</b> Click the banner above to load the live 3D cyberpunk tech deck &amp; resume!</i>
+  <i>⚡ <b>Interactive Mode Available:</b> Click the graphic above to open the live interactive resume deck with custom mouse tracking and live code matrix!</i>
 </p>
 
 <br/>
 
-<!-- ═══════════════════════ LIVE BADGES ═══════════════════════ -->
-<img src="https://komarev.com/ghpvc/?username=2710-bhushan&label=PROFILE+VIEWS&color=00f0ff&style=for-the-badge&labelColor=020408"/>
+<!-- ═══════════════════════ LIVE DIAGNOSTICS BADGES ═══════════════════════ -->
+<img src="https://komarev.com/ghpvc/?username=2710-bhushan&label=DECK+VIEWS&color=00f0ff&style=for-the-badge&labelColor=020408"/>
 &nbsp;
 <img src="https://img.shields.io/github/followers/2710-bhushan?label=FOLLOWERS&style=for-the-badge&color=7b2fff&labelColor=020408&logo=github&logoColor=white"/>
 &nbsp;
-<img src="https://img.shields.io/badge/STATUS-ACTIVE%20BUILDER-ff3cac?style=for-the-badge&labelColor=020408"/>
+<img src="https://img.shields.io/badge/BUILDER_STATUS-ACTIVE-ff3cac?style=for-the-badge&labelColor=020408"/>
 
 <br/><br/>
 
 <a href="https://linkedin.com/in/bhushan-ingale-3717212a7" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white" height="25"/></a>&nbsp;
 <a href="https://twitter.com/bhushan27102005" target="_blank"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=flat-square&logo=twitter&logoColor=white" height="25"/></a>&nbsp;
-<a href="https://instagram.com/bhushan_ingale_27" target="_blank"><img src="https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white" height="25"/></a>&nbsp;
+<a href="https://instagram.com/bhushan_indigo" target="_blank"><img src="https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white" height="25"/></a>&nbsp;
 <a href="mailto:bhushaningale2006@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=flat-square&logo=gmail&logoColor=white" height="25"/></a>&nbsp;
 <a href="https://bhushan-portfolio-five.vercel.app/" target="_blank"><img src="https://img.shields.io/badge/Portfolio-00f0ff?style=flat-square&logo=vercel&logoColor=black" height="25"/></a>&nbsp;
 <a href="https://drive.google.com/file/d/1w1NdOefh7DFuuycBsYLyMq9ElJ7A9Yl5/view?usp=sharing" target="_blank"><img src="https://img.shields.io/badge/Resume-7b2fff?style=flat-square&logo=google-drive&logoColor=white" height="25"/></a>
@@ -31,9 +31,9 @@
 
 ---
 
-<!-- ═══════════════════════ PROFILE METADATA ═══════════════════════ -->
+<!-- ═══════════════════════ CORE TERMINAL ═══════════════════════ -->
 <div align="center">
-  <h2>👨‍💻 Core System Info</h2>
+  <h2>👨‍💻 Core System Diagnostics</h2>
 </div>
 
 <img align="right" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="180" style="border-radius: 8px; margin-left: 20px; margin-bottom: 20px;" />
@@ -41,13 +41,13 @@
 ```yaml
 - Name:       "Bhushan Ingale"
 - Location:   "India 🇮🇳"
-- Focus:      "Full Stack Developer · AI/ML System Integration"
+- Focus:      "Full Stack Web App Development · AI/ML System Integration"
 - Stack:      "MERN · Flask · Django · scikit-learn · SQL"
-- Projects:   "30+ applications shipped across 3 suites"
+- Projects:   "30+ applications shipped across 3 major suites"
 - Portfolio:  "bhushan-portfolio-five.vercel.app"
 ```
 
-- 🔭 **Current Active Build:** [Bank-Kiosk Conversion Software](https://github.com/2710-bhushan/BOI-KISOK-SOFTWARE)
+- 🔭 **Current Build:** [Bank-Kiosk Conversion Software](https://github.com/2710-bhushan/BOI-KISOK-SOFTWARE)
 - 🌱 **Learning Path:** React Native · Next.js · Spring Boot · Docker
 - 🤖 **Specialization:** Python ML platforms linked directly into production web backends.
 
