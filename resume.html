@@ -3,25 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bhushan Ingale — Full Stack Developer Portfolio</title>
+  <title>Bhushan Ingale — Full Stack Developer &amp; AI/ML Builder</title>
   
-  <!-- Bootstrap 5 CSS -->
+  <!-- CSS CDNs -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Boxicons -->
   <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
   
   <style>
+    /* ═══════════════ CORE DESIGN SYSTEM ═══════════════ */
     :root {
       --bg: #020408;
       --bg-panel: rgba(255, 255, 255, 0.02);
-      --border: rgba(0, 240, 255, 0.15);
+      --border: rgba(0, 240, 255, 0.12);
       --accent: #00f0ff;
       --accent-purple: #7b2fff;
       --accent-pink: #ff3cac;
+      --gold: #ffd700;
       --text: #e8f4f8;
       --muted: #4a6070;
       --font-display: 'Syne', sans-serif;
@@ -38,20 +40,26 @@
       position: relative;
     }
 
-    /* Grid Background Effect */
-    body::after {
+    /* Noise overlay */
+    body::before {
       content: "";
       position: fixed;
       inset: 0;
-      background-image: 
-        linear-gradient(rgba(0, 240, 255, 0.025) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0, 240, 255, 0.025) 1px, transparent 1px);
-      background-size: 50px 50px;
       pointer-events: none;
-      z-index: -1;
+      z-index: 9999;
+      opacity: 0.35;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
     }
 
-    /* Custom Interactive Cursor */
+    /* Grid lines */
+    .grid-bg {
+      background-image: 
+        linear-gradient(rgba(0, 240, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 240, 255, 0.02) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+
+    /* Custom Cursor */
     .cursor-dot {
       width: 8px;
       height: 8px;
@@ -75,6 +83,28 @@
       transition: transform 0.1s ease-out, border-color 0.3s;
     }
 
+    /* Scrollbar */
+    ::-webkit-scrollbar { width: 4px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 2px; }
+
+    /* Navigation */
+    .navbar {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      background-color: rgba(2, 4, 8, 0.85) !important;
+      backdrop-filter: blur(20px);
+    }
+    .nav-link {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.15em;
+      color: var(--muted) !important;
+      transition: color 0.3s;
+    }
+    .nav-link:hover, .nav-link.active {
+      color: var(--accent) !important;
+    }
+
     /* Glassmorphism Cards */
     .glass-card {
       background: rgba(255, 255, 255, 0.01);
@@ -86,19 +116,13 @@
     .glass-card:hover {
       transform: translateY(-8px);
       border-color: var(--accent);
-      box-shadow: 0 15px 35px rgba(0, 240, 255, 0.15);
+      box-shadow: 0 20px 40px rgba(0, 240, 255, 0.12);
       background: rgba(0, 240, 255, 0.02);
     }
 
-    /* Titles & Headings */
-    .display-font {
-      font-family: var(--font-display);
-      font-weight: 800;
-    }
-    .mono-font {
-      font-family: var(--font-mono);
-      letter-spacing: 2px;
-    }
+    /* Text & Typography */
+    .display-font { font-family: var(--font-display); font-weight: 800; }
+    .mono-font { font-family: var(--font-mono); letter-spacing: 1.5px; }
     .gradient-text {
       background: linear-gradient(135deg, #ffffff 0%, var(--accent) 50%, var(--accent-purple) 100%);
       -webkit-background-clip: text;
@@ -108,8 +132,8 @@
     /* Buttons */
     .btn-cyber {
       font-family: var(--font-mono);
-      font-size: 0.85rem;
-      letter-spacing: 2px;
+      font-size: 0.8rem;
+      letter-spacing: 1.5px;
       padding: 12px 28px;
       color: var(--accent);
       background: transparent;
@@ -119,6 +143,7 @@
       overflow: hidden;
       transition: all 0.3s;
       z-index: 1;
+      clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
     }
     .btn-cyber::before {
       content: "";
@@ -131,35 +156,18 @@
       transition: all 0.4s;
       z-index: -1;
     }
-    .btn-cyber:hover::before {
-      left: 0;
-    }
+    .btn-cyber:hover::before { left: 0; }
     .btn-cyber:hover {
       color: #fff;
       box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
+      border-color: var(--accent);
     }
 
-    /* Navigation */
-    .navbar {
-      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-      background-color: rgba(2, 4, 8, 0.8) !important;
-      backdrop-filter: blur(12px);
-    }
-    .nav-link {
-      font-family: var(--font-mono);
-      font-size: 0.8rem;
-      color: var(--muted) !important;
-      transition: color 0.3s;
-    }
-    .nav-link:hover, .nav-link.active {
-      color: var(--accent) !important;
-    }
-
-    /* Progress Bars */
+    /* Progress Custom */
     .progress-bar-custom {
-      height: 6px;
+      height: 4px;
       background-color: rgba(255, 255, 255, 0.05);
-      border-radius: 3px;
+      border-radius: 2px;
       overflow: hidden;
     }
     .progress-fill {
@@ -169,13 +177,14 @@
       transition: width 1.5s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
-    /* Orbiting Systems */
-    .orbit-container {
+    /* 3D Orb */
+    .orb-container {
       width: 320px;
       height: 320px;
       position: relative;
+      perspective: 800px;
     }
-    .orbit-ring {
+    .orb-ring {
       border: 1px solid rgba(0, 240, 255, 0.1);
       border-radius: 50%;
       position: absolute;
@@ -184,26 +193,24 @@
       transform: translate(-50%, -50%);
     }
     .ring-1 { width: 100%; height: 100%; animation: spin 20s linear infinite; }
-    .ring-2 { width: 75%; height: 75%; border-style: dashed; animation: spin-reverse 15s linear infinite; }
-    .ring-3 { width: 50%; height: 50%; animation: spin 10s linear infinite; }
-    .orbit-core {
-      width: 90px;
-      height: 90px;
-      background-color: var(--bg);
-      border: 2px solid var(--accent);
-      box-shadow: 0 0 25px rgba(0, 240, 255, 0.3);
+    .ring-2 { width: 80%; height: 80%; border-style: dashed; animation: spin-reverse 15s linear infinite; }
+    .ring-3 { width: 60%; height: 60%; animation: spin 10s linear infinite; }
+    .orb-core {
+      width: 160px;
+      height: 160px;
+      background: radial-gradient(circle at 35% 35%, #050d18, #020408);
+      border: 1.5px solid var(--accent);
+      box-shadow: 0 0 40px rgba(0, 240, 255, 0.2);
       border-radius: 50%;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      font-family: var(--font-mono);
-      font-weight: 700;
-      color: var(--text);
-      font-size: 0.9rem;
+      text-align: center;
     }
 
     @keyframes spin {
@@ -215,24 +222,42 @@
       to { transform: translate(-50%, -50%) rotate(0deg); }
     }
 
-    .suite-badge {
-      font-family: var(--font-mono);
-      font-size: 0.65rem;
-      padding: 4px 10px;
-      border-radius: 4px;
-      border: 1px solid rgba(0, 240, 255, 0.2);
-      background: rgba(0, 240, 255, 0.05);
-      color: var(--accent);
+    /* Bullet Indicators */
+    .indicator-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 8px var(--accent);
+      display: inline-block;
+      margin-right: 12px;
+      vertical-align: middle;
+    }
+
+    /* Fade-up observer */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .project-header {
+      border-left: 2.5px solid var(--accent);
+      padding-left: 14px;
     }
   </style>
 </head>
-<body>
+<body class="grid-bg">
 
-  <!-- Custom Cursor Elements -->
+  <!-- Custom Cursor -->
   <div class="cursor-dot d-none d-lg-block" id="cursorDot"></div>
   <div class="cursor-outline d-none d-lg-block" id="cursorOutline"></div>
 
-  <!-- Navbar -->
+  <!-- Header / Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3">
     <div class="container">
       <a class="navbar-brand display-font text-uppercase text-decoration-none" href="#" style="color: var(--accent); letter-spacing: 2px;">B.INGALE</a>
@@ -256,18 +281,20 @@
     <div class="container">
       <div class="row align-items-center justify-content-between">
         <div class="col-lg-7">
-          <span class="mono-font text-uppercase text-info d-block mb-3" style="font-size: 0.8rem;">Full Stack Developer</span>
+          <div style="display: inline-flex; align-items: center; gap: 8px; margin-bottom: 24px; padding: 6px 16px; border: 1px solid rgba(0,240,255,0.2); borderRadius: 4px; background: rgba(0,240,255,0.05); font-family: var(--font-mono); font-size: 0.65rem; color: var(--accent); letter-spacing: 0.15em;">
+            <span style="width: 6px; height: 6px; borderRadius: 50%; background: #00ff88; box-shadow: 0 0 8px #00ff88;" class="pulse"></span>
+            AVAILABLE FOR HIRE
+          </div>
+          <span class="mono-font text-uppercase text-secondary d-block mb-2" style="font-size: 0.8rem;">Hello, I'm</span>
           <h1 class="display-font gradient-text mb-3" style="font-size: clamp(2.5rem, 6vw, 4.5rem); line-height: 1.1;">Bhushan Ingale</h1>
-          <h3 class="mono-font mb-4" style="color: var(--accent-pink); font-size: clamp(1.1rem, 2.5vw, 1.6rem);">
-            &gt; <span id="typed"></span><span class="placeholder-blink">_</span>
+          <h3 class="mono-font mb-4" style="color: var(--accent); font-size: clamp(1.1rem, 2.5vw, 1.5rem);">
+            &gt; <span id="typed"></span><span class="cursor-blink">_</span>
           </h3>
-          <p class="lead text-secondary mb-5" style="max-width: 580px; font-size: 1.05rem; line-height: 1.8;">
-            I design and construct clean, secure, and modern web platforms. 
-            Shipped over <span class="text-light">30+ production web applications</span> across campus infrastructure, 
-            machine learning intelligence suites, and local banking conversion systems.
+          <p class="lead text-secondary mb-5" style="max-width: 540px; font-size: 1rem; line-height: 1.8;">
+            Crafting scalable web applications with the MERN stack. Passionate about clean architecture, performance optimization, and building seamless user experiences.
           </p>
           <div class="d-flex gap-3 flex-wrap">
-            <a href="#projects" class="btn btn-cyber">VIEW ARCHIVES</a>
+            <a href="#projects" class="btn btn-cyber">VIEW PROJECTS</a>
             <a href="#contact" class="btn btn-outline-secondary px-4 py-3" style="font-family: var(--font-mono); font-size: 0.85rem;">CONNECT</a>
           </div>
         </div>
@@ -276,7 +303,10 @@
             <div class="orbit-ring ring-1"></div>
             <div class="orbit-ring ring-2"></div>
             <div class="orbit-ring ring-3"></div>
-            <div class="orbit-core">DEV.DECK</div>
+            <div class="orb-core">
+              <div class="mono-font" style="font-size: 0.9rem; font-weight: 700; color: #fff; letter-spacing: 1px;">MERN</div>
+              <div class="mono-font" style="font-size: 0.6rem; color: var(--accent); margin-top: 4px; letter-spacing: 2px;">DEV.DECK</div>
+            </div>
           </div>
         </div>
       </div>
@@ -285,28 +315,28 @@
 
   <!-- About Section -->
   <section id="about" class="py-5 my-5">
-    <div class="container">
+    <div class="container reveal">
       <div class="row g-5">
         <div class="col-lg-6">
           <span class="mono-font text-info d-block mb-2" style="font-size: 0.75rem;">// PROFILE SUMMARY</span>
           <h2 class="display-font mb-4 text-light">Who I Am</h2>
           <p class="text-secondary mb-4" style="line-height: 1.8;">
-            Based in India, I focus on constructing high-quality software architectures. My practical experiences include engineering database systems, deploying micro-platforms, and parsing files with custom encryption models.
+            I'm a <span style="color: var(--accent);">Full Stack Developer</span> currently pursuing B.Tech in Computer Engineering at Government College OF Engineering, Jalgaon, with hands-on internship experience building scalable full-stack products.
           </p>
           <p class="text-secondary mb-4" style="line-height: 1.8;">
-            I specialize in Python ecosystem backends (Flask, Django, SQLite, SQLAlchemy), MERN stacks, and building ML engines integrated seamlessly with clean interactive client designs.
+            I specialize in building end-to-end web solutions — from designing intuitive React UIs to architecting robust Node.js backends. I've worked as a Full Stack Developer Intern at <span style="color: var(--accent-purple);">CodeClause</span>, where I engineered real-time CMS systems and improved performance metrics significantly.
           </p>
-          <a href="https://drive.google.com/file/d/1w1NdOefh7DFuuycBsYLyMq9ElJ7A9Yl5/view?usp=sharing" target="_blank" class="btn btn-cyber mt-3">DOWNLOAD RESUME (PDF)</a>
+          <a href="https://bhushan-portfolio-five.vercel.app/" target="_blank" class="btn btn-cyber mt-3">VISIT PORTFOLIO SITE</a>
         </div>
         <div class="col-lg-6">
           <div class="glass-card p-4 h-100">
             <h5 class="mono-font text-info mb-4" style="font-size: 0.85rem;">[ CORE METADATA ]</h5>
             <table class="table table-borderless text-secondary m-0">
               <tbody>
-                <tr><td class="mono-font py-2" style="width: 140px; font-size: 0.75rem; color: var(--accent);">LOCATION</td><td class="text-light py-2">India 🇮🇳</td></tr>
+                <tr><td class="mono-font py-2" style="width: 140px; font-size: 0.75rem; color: var(--accent);">LOCATION</td><td class="text-light py-2">Bhusawal, India 🇮🇳</td></tr>
+                <tr><td class="mono-font py-2" style="font-size: 0.75rem; color: var(--accent);">DEGREE</td><td class="text-light py-2">B.Tech Computer Engineering</td></tr>
                 <tr><td class="mono-font py-2" style="font-size: 0.75rem; color: var(--accent);">EMAIL</td><td class="text-light py-2">bhushaningale2006@gmail.com</td></tr>
-                <tr><td class="mono-font py-2" style="font-size: 0.75rem; color: var(--accent);">STATUS</td><td class="text-info py-2">● Open to Work / Internships</td></tr>
-                <tr><td class="mono-font py-2" style="font-size: 0.75rem; color: var(--accent);">SPECIALTY</td><td class="text-light py-2">Full Stack · AI/ML System Design</td></tr>
+                <tr><td class="mono-font py-2" style="font-size: 0.75rem; color: var(--accent);">STATUS</td><td class="text-info py-2">● Available for Hire</td></tr>
               </tbody>
             </table>
           </div>
@@ -315,9 +345,9 @@
     </div>
   </section>
 
-  <!-- Skills / Tech Stack Section -->
+  <!-- Skills Matrix -->
   <section id="skills" class="py-5 my-5">
-    <div class="container">
+    <div class="container reveal">
       <span class="mono-font text-info d-block mb-2" style="font-size: 0.75rem;">// TECHNOLOGY MATRIX</span>
       <h2 class="display-font mb-5 text-light">Professional Stack</h2>
       
@@ -327,16 +357,20 @@
           <div class="glass-card p-4 h-100">
             <h5 class="mono-font text-info mb-4" style="font-size: 0.85rem;">[ FRONTEND ]</h5>
             <div class="mb-3">
-              <div class="d-flex justify-content-between mb-1"><span class="text-light">React &amp; Next.js</span><span class="mono-font text-secondary" style="font-size: 0.75rem;">90%</span></div>
+              <div class="d-flex justify-content-between mb-1"><span class="text-light">React.js / Next.js</span><span class="mono-font text-secondary" style="font-size: 0.75rem;">90%</span></div>
               <div class="progress-bar-custom"><div class="progress-fill" data-width="90%"></div></div>
             </div>
             <div class="mb-3">
-              <div class="d-flex justify-content-between mb-1"><span class="text-light">Vue.js</span><span class="mono-font text-secondary" style="font-size: 0.75rem;">75%</span></div>
-              <div class="progress-bar-custom"><div class="progress-fill" data-width="75%"></div></div>
+              <div class="d-flex justify-content-between mb-1"><span class="text-light">TypeScript</span><span class="mono-font text-secondary" style="font-size: 0.75rem;">82%</span></div>
+              <div class="progress-bar-custom"><div class="progress-fill" data-width="82%"></div></div>
             </div>
             <div class="mb-3">
-              <div class="d-flex justify-content-between mb-1"><span class="text-light">Tailwind CSS</span><span class="mono-font text-secondary" style="font-size: 0.75rem;">85%</span></div>
-              <div class="progress-bar-custom"><div class="progress-fill" data-width="85%"></div></div>
+              <div class="d-flex justify-content-between mb-1"><span class="text-light">HTML / CSS</span><span class="mono-font text-secondary" style="font-size: 0.75rem;">92%</span></div>
+              <div class="progress-bar-custom"><div class="progress-fill" data-width="92%"></div></div>
+            </div>
+            <div class="mb-3">
+              <div class="d-flex justify-content-between mb-1"><span class="text-light">Tailwind / Bootstrap</span><span class="mono-font text-secondary" style="font-size: 0.75rem;">88%</span></div>
+              <div class="progress-bar-custom"><div class="progress-fill" data-width="88%"></div></div>
             </div>
           </div>
         </div>
@@ -346,35 +380,95 @@
           <div class="glass-card p-4 h-100">
             <h5 class="mono-font text-info mb-4" style="font-size: 0.85rem;">[ BACKEND ]</h5>
             <div class="mb-3">
-              <div class="d-flex justify-content-between mb-1"><span class="text-light">Flask &amp; Django</span><span class="mono-font text-secondary" style="font-size: 0.75rem;">92%</span></div>
+              <div class="d-flex justify-content-between mb-1"><span class="text-light">Node.js / Express</span><span class="mono-font text-secondary" style="font-size: 0.75rem;">87%</span></div>
+              <div class="progress-bar-custom"><div class="progress-fill" data-width="87%"></div></div>
+            </div>
+            <div class="mb-3">
+              <div class="d-flex justify-content-between mb-1"><span class="text-light">RESTful APIs</span><span class="mono-font text-secondary" style="font-size: 0.75rem;">90%</span></div>
+              <div class="progress-bar-custom"><div class="progress-fill" data-width="90%"></div></div>
+            </div>
+            <div class="mb-3">
+              <div class="d-flex justify-content-between mb-1"><span class="text-light">Python / Flask</span><span class="mono-font text-secondary" style="font-size: 0.75rem;">78%</span></div>
+              <div class="progress-bar-custom"><div class="progress-fill" data-width="78%"></div></div>
+            </div>
+            <div class="mb-3">
+              <div class="d-flex justify-content-between mb-1"><span class="text-light">Django</span><span class="mono-font text-secondary" style="font-size: 0.75rem;">92%</span></div>
               <div class="progress-bar-custom"><div class="progress-fill" data-width="92%"></div></div>
-            </div>
-            <div class="mb-3">
-              <div class="d-flex justify-content-between mb-1"><span class="text-light">Node.js</span><span class="mono-font text-secondary" style="font-size: 0.75rem;">85%</span></div>
-              <div class="progress-bar-custom"><div class="progress-fill" data-width="85%"></div></div>
-            </div>
-            <div class="mb-3">
-              <div class="d-flex justify-content-between mb-1"><span class="text-light">SQL &amp; MongoDB</span><span class="mono-font text-secondary" style="font-size: 0.75rem;">88%</span></div>
-              <div class="progress-bar-custom"><div class="progress-fill" data-width="88%"></div></div>
             </div>
           </div>
         </div>
 
-        <!-- AI/ML & DevOps -->
+        <!-- Database & DevOps -->
         <div class="col-md-4">
           <div class="glass-card p-4 h-100">
-            <h5 class="mono-font text-info mb-4" style="font-size: 0.85rem;">[ SYSTEMS ]</h5>
+            <h5 class="mono-font text-info mb-4" style="font-size: 0.85rem;">[ DB &amp; DEVOPS ]</h5>
             <div class="mb-3">
-              <div class="d-flex justify-content-between mb-1"><span class="text-light">Python (scikit-learn)</span><span class="mono-font text-secondary" style="font-size: 0.75rem;">82%</span></div>
+              <div class="d-flex justify-content-between mb-1"><span class="text-light">MongoDB</span><span class="mono-font text-secondary" style="font-size: 0.75rem;">86%</span></div>
+              <div class="progress-bar-custom"><div class="progress-fill" data-width="86%"></div></div>
+            </div>
+            <div class="mb-3">
+              <div class="d-flex justify-content-between mb-1"><span class="text-light">MySQL / PostgreSQL</span><span class="mono-font text-secondary" style="font-size: 0.75rem;">82%</span></div>
               <div class="progress-bar-custom"><div class="progress-fill" data-width="82%"></div></div>
             </div>
             <div class="mb-3">
-              <div class="d-flex justify-content-between mb-1"><span class="text-light">Docker &amp; AWS</span><span class="mono-font text-secondary" style="font-size: 0.75rem;">70%</span></div>
-              <div class="progress-bar-custom"><div class="progress-fill" data-width="70%"></div></div>
+              <div class="d-flex justify-content-between mb-1"><span class="text-light">Git / GitHub</span><span class="mono-font text-secondary" style="font-size: 0.75rem;">90%</span></div>
+              <div class="progress-bar-custom"><div class="progress-fill" data-width="90%"></div></div>
             </div>
             <div class="mb-3">
-              <div class="d-flex justify-content-between mb-1"><span class="text-light">Git &amp; Shell</span><span class="mono-font text-secondary" style="font-size: 0.75rem;">92%</span></div>
-              <div class="progress-bar-custom"><div class="progress-fill" data-width="92%"></div></div>
+              <div class="d-flex justify-content-between mb-1"><span class="text-light">Docker</span><span class="mono-font text-secondary" style="font-size: 0.75rem;">68%</span></div>
+              <div class="progress-bar-custom"><div class="progress-fill" data-width="68%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Timeline -->
+  <section id="experience" class="py-5 my-5">
+    <div class="container reveal">
+      <span class="mono-font text-info d-block mb-2" style="font-size: 0.75rem;">// WORK &amp; ACADEMICS</span>
+      <h2 class="display-font mb-5 text-light">Professional Timeline</h2>
+      
+      <div class="row g-5">
+        <div class="col-lg-6">
+          <h4 class="mono-font text-info mb-4" style="font-size: 0.95rem;">[ WORK HISTORY ]</h4>
+          <div style="border-left: 1px solid rgba(0, 240, 255, 0.15); padding-left: 24px; position: relative;">
+            <div class="mb-5">
+              <span class="mono-font text-info" style="font-size: 0.7rem;">May 2025 – Aug 2025</span>
+              <h5 class="text-light mt-1">Generative AI Engineer &amp; Full Stack Developer Intern</h5>
+              <div class="text-secondary mono-font mb-3" style="font-size: 0.75rem;">CodeClause — Mangaluru, India</div>
+              <p class="text-secondary" style="font-size: 0.92rem; line-height: 1.7;">
+                Engineered intelligent automation tools using LLMs. Integrated OpenAI APIs for NLP pipelines and constructed full-stack platforms using React, Node.js, and Spring Boot.
+              </p>
+            </div>
+            
+            <div>
+              <span class="mono-font text-info" style="font-size: 0.7rem;">April 2025 – Present</span>
+              <h5 class="text-light mt-1">Virtual Intern: Software Engineering &amp; Cyber Security</h5>
+              <div class="text-secondary mono-font mb-3" style="font-size: 0.75rem;">Accenture &amp; Deloitte</div>
+              <p class="text-secondary" style="font-size: 0.92rem; line-height: 1.7;">
+                Analyzed SDLC architectures, designed system metrics, and conducted risk analysis simulating enterprise threat detections.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-6">
+          <h4 class="mono-font text-info mb-4" style="font-size: 0.95rem;">[ EDUCATION ]</h4>
+          <div style="border-left: 1px solid rgba(123, 47, 255, 0.15); padding-left: 24px; position: relative;">
+            <div class="mb-5">
+              <span class="mono-font text-info" style="font-size: 0.7rem;">Aug 2025 – Jul 2028</span>
+              <h5 class="text-light mt-1">B.Tech in Computer Engineering</h5>
+              <div class="text-secondary mono-font mb-2" style="font-size: 0.75rem;">Govt College of Engineering Jalgaon</div>
+              <span class="suite-badge">CGPA: 9.68/10</span>
+            </div>
+            
+            <div>
+              <span class="mono-font text-info" style="font-size: 0.7rem;">Sep 2022 – Jul 2025</span>
+              <h5 class="text-light mt-1">Diploma in Computer Engineering</h5>
+              <div class="text-secondary mono-font mb-2" style="font-size: 0.75rem;">GF's Godavari College</div>
+              <span class="suite-badge" style="color: var(--accent-purple); border-color: rgba(123,47,255,0.2); background: rgba(123,47,255,0.05);">Score: 90.74%</span>
             </div>
           </div>
         </div>
@@ -384,74 +478,163 @@
 
   <!-- Projects Section -->
   <section id="projects" class="py-5 my-5">
-    <div class="container">
+    <div class="container reveal">
       <span class="mono-font text-info d-block mb-2" style="font-size: 0.75rem;">// WORK ARCHIVES</span>
       <h2 class="display-font mb-5 text-light">Featured Portfolios</h2>
       
       <div class="row g-4">
         <!-- Project 1 -->
         <div class="col-lg-6">
-          <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between">
+          <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between" style="border-left: 3px solid var(--accent-pink);">
             <div>
-              <span class="suite-badge mb-3 d-inline-block">FINTECH</span>
-              <h4 class="display-font text-light mb-3">BOI Bank Kiosk Conversion</h4>
+              <span class="suite-badge mb-3 d-inline-block" style="color: var(--accent-pink); border-color: rgba(255, 60, 172, 0.2);">CUSTOMER SERVICE PORTAL</span>
+              <h4 class="display-font text-light mb-3">Full Stack Service Booking Platform</h4>
               <p class="text-secondary mb-4" style="font-size: 0.95rem;">
-                Modernization processing conversion system built for Bank of India, improving UI rendering times, transaction handling, and terminal operations.
+                A real-time online service booking platform developed for customers to hire electricians, plumbers, technicians, and home service providers through a secure digital workflow.
               </p>
+              <ul class="text-secondary mb-4" style="font-size: 0.9rem; list-style: none; padding: 0;">
+                <li><span class="indicator-dot"></span>Real-time service booking and request management</li>
+                <li><span class="indicator-dot"></span>Customer and provider authentication workflow</li>
+                <li><span class="indicator-dot"></span>Modern responsive dashboard with API integration</li>
+              </ul>
+              <div class="mb-4">
+                <span class="mono-font text-muted" style="font-size: 0.7rem;">STACK:</span>
+                <span class="text-light" style="font-size: 0.85rem;">Python · Flask · JavaScript · SQLite3 · REST API</span>
+              </div>
             </div>
             <div class="d-flex gap-3">
-              <a href="https://github.com/2710-bhushan/BOI-KISOK-SOFTWARE" target="_blank" class="btn btn-cyber py-2 px-3"><i class="bx bxl-github align-middle"></i> GITHUB</a>
+              <a href="https://bhushan-portfolio-five.vercel.app/" target="_blank" class="btn btn-cyber py-2 px-3">DEMO →</a>
+              <a href="https://github.com/2710-bhushan/Customer_Service_Protal" target="_blank" class="btn btn-outline-secondary py-2 px-3"><i class="bx bxl-github align-middle"></i> GITHUB</a>
             </div>
           </div>
         </div>
 
         <!-- Project 2 -->
         <div class="col-lg-6">
-          <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between">
+          <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between" style="border-left: 3px solid var(--accent);">
             <div>
-              <span class="suite-badge mb-3 d-inline-block" style="color: var(--accent-pink); border-color: rgba(255, 60, 172, 0.2);">AI / MACHINE LEARNING</span>
-              <h4 class="display-font text-light mb-3">AI Campus Intelligence Suite</h4>
+              <span class="suite-badge mb-3 d-inline-block">BANK KIOSK SYSTEM</span>
+              <h4 class="display-font text-light mb-3">Enterprise Banking Management System</h4>
               <p class="text-secondary mb-4" style="font-size: 0.95rem;">
-                10 specialized AI models packaged into interactive apps including crop scanners, resume parsers, dropout predictors, and sign language models.
+                A real-time banking kiosk and account management platform developed for handling customer onboarding, KYC verification, account services, transactions, and secure banking operations.
               </p>
+              <ul class="text-secondary mb-4" style="font-size: 0.9rem; list-style: none; padding: 0;">
+                <li><span class="indicator-dot"></span>Customer account creation and KYC verification workflow</li>
+                <li><span class="indicator-dot"></span>Real-time deposit, withdrawal, and balance management system</li>
+                <li><span class="indicator-dot"></span>Secure transaction processing with database integration</li>
+              </ul>
+              <div class="mb-4">
+                <span class="mono-font text-muted" style="font-size: 0.7rem;">STACK:</span>
+                <span class="text-light" style="font-size: 0.85rem;">Java · Java Swing · MySQL · JDBC · Authentication</span>
+              </div>
             </div>
-            <div class="d-flex justify-content-between align-items-center">
-              <a href="https://github.com/2710-bhushan" target="_blank" class="btn btn-cyber py-2 px-3"><i class="bx bxl-github align-middle"></i> SOURCE</a>
-              <span class="mono-font text-secondary" style="font-size: 0.75rem;">10 ACTIVE APPS</span>
+            <div class="d-flex gap-3">
+              <a href="https://bhushan-portfolio-five.vercel.app/" target="_blank" class="btn btn-cyber py-2 px-3">DEMO →</a>
+              <a href="https://github.com/2710-bhushan/Boi-Kiosk-Software" target="_blank" class="btn btn-outline-secondary py-2 px-3"><i class="bx bxl-github align-middle"></i> GITHUB</a>
             </div>
           </div>
         </div>
 
         <!-- Project 3 -->
         <div class="col-lg-6">
-          <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between">
+          <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between" style="border-left: 3px solid var(--accent-purple);">
             <div>
-              <span class="suite-badge mb-3 d-inline-block" style="color: var(--accent-purple); border-color: rgba(123, 47, 255, 0.2);">CAMPUS UTILITY</span>
-              <h4 class="display-font text-light mb-3">Campus Infrastructure Suite</h4>
+              <span class="suite-badge mb-3 d-inline-block" style="color: var(--accent-purple); border-color: rgba(123, 47, 255, 0.2);">RESULT PORTAL</span>
+              <h4 class="display-font text-light mb-3">Educational Result Publishing System</h4>
               <p class="text-secondary mb-4" style="font-size: 0.95rem;">
-                10 productivity portals built using Flask, SQLite, and dark glassmorphic panels handling bus tracking, hostels, lost &amp; found, and donor queues.
+                A secure result publishing platform developed for schools and colleges to instantly publish examination results online without affecting their existing academic systems.
               </p>
+              <ul class="text-secondary mb-4" style="font-size: 0.9rem; list-style: none; padding: 0;">
+                <li><span class="indicator-dot"></span>Instant online result publishing workflow</li>
+                <li><span class="indicator-dot"></span>Independent portal integration without modifying existing systems</li>
+                <li><span class="indicator-dot"></span>Fast student result search and retrieval functionality</li>
+              </ul>
+              <div class="mb-4">
+                <span class="mono-font text-muted" style="font-size: 0.7rem;">STACK:</span>
+                <span class="text-light" style="font-size: 0.85rem;">Python · Flask · MySQL · HTML · CSS · JavaScript</span>
+              </div>
             </div>
-            <div class="d-flex justify-content-between align-items-center">
-              <a href="https://github.com/2710-bhushan" target="_blank" class="btn btn-cyber py-2 px-3"><i class="bx bxl-github align-middle"></i> SOURCE</a>
-              <span class="mono-font text-secondary" style="font-size: 0.75rem;">10 ACTIVE APPS</span>
+            <div class="d-flex gap-3">
+              <a href="https://bhushan-portfolio-five.vercel.app/" target="_blank" class="btn btn-cyber py-2 px-3">DEMO →</a>
+              <a href="https://github.com/2710-bhushan" target="_blank" class="btn btn-outline-secondary py-2 px-3"><i class="bx bxl-github align-middle"></i> GITHUB</a>
             </div>
           </div>
         </div>
 
         <!-- Project 4 -->
         <div class="col-lg-6">
-          <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between">
+          <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between" style="border-left: 3px solid #00e676;">
             <div>
-              <span class="suite-badge mb-3 d-inline-block" style="color: #00e676; border-color: rgba(0, 230, 118, 0.2);">COMMUNITY SERVICE</span>
-              <h4 class="display-font text-light mb-3">Community Portal Suite</h4>
+              <span class="suite-badge mb-3 d-inline-block" style="color: #00e676; border-color: rgba(0, 230, 118, 0.2);">HEALTHCARE NETWORK</span>
+              <h4 class="display-font text-light mb-3">Real-Time Healthcare Management Platform</h4>
               <p class="text-secondary mb-4" style="font-size: 0.95rem;">
-                10 community service micro-portals with SHA-256 certificate validation, medical supply locator maps, and disaster coordinates tracking.
+                A real-time healthcare emergency platform developed for hospital bed booking, ambulance tracking, emergency requests, and live availability management across multiple city hospitals.
               </p>
+              <ul class="text-secondary mb-4" style="font-size: 0.9rem; list-style: none; padding: 0;">
+                <li><span class="indicator-dot"></span>Real-time hospital bed availability system</li>
+                <li><span class="indicator-dot"></span>Emergency ambulance booking and tracking</li>
+                <li><span class="indicator-dot"></span>Multi-hospital live synchronization workflow</li>
+              </ul>
+              <div class="mb-4">
+                <span class="mono-font text-muted" style="font-size: 0.7rem;">STACK:</span>
+                <span class="text-light" style="font-size: 0.85rem;">Python · Flask · MongoDB · Socket.IO · REST API</span>
+              </div>
             </div>
-            <div class="d-flex justify-content-between align-items-center">
-              <a href="https://github.com/2710-bhushan" target="_blank" class="btn btn-cyber py-2 px-3"><i class="bx bxl-github align-middle"></i> SOURCE</a>
-              <span class="mono-font text-secondary" style="font-size: 0.75rem;">10 ACTIVE APPS</span>
+            <div class="d-flex gap-3">
+              <a href="https://bhushan-portfolio-five.vercel.app/" target="_blank" class="btn btn-cyber py-2 px-3">DEMO →</a>
+              <a href="https://github.com/2710-bhushan" target="_blank" class="btn btn-outline-secondary py-2 px-3"><i class="bx bxl-github align-middle"></i> GITHUB</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="col-lg-6">
+          <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between" style="border-left: 3px solid var(--accent-pink);">
+            <div>
+              <span class="suite-badge mb-3 d-inline-block" style="color: var(--accent-pink); border-color: rgba(255, 60, 172, 0.2);">REAL BANKING PORTAL</span>
+              <h4 class="display-font text-light mb-3">Enterprise Internet Banking Management</h4>
+              <p class="text-secondary mb-4" style="font-size: 0.95rem;">
+                A real-time enterprise banking and internet banking platform developed to simulate real-world banking operations including account management, KYC verification, balance monitoring, and secure transactions.
+              </p>
+              <ul class="text-secondary mb-4" style="font-size: 0.9rem; list-style: none; padding: 0;">
+                <li><span class="indicator-dot"></span>Real-time internet banking system with secure customer login</li>
+                <li><span class="indicator-dot"></span>Account creation, KYC verification, deposit, withdrawal, and fund transfer</li>
+                <li><span class="indicator-dot"></span>Online banking dashboard with transaction history</li>
+              </ul>
+              <div class="mb-4">
+                <span class="mono-font text-muted" style="font-size: 0.7rem;">STACK:</span>
+                <span class="text-light" style="font-size: 0.85rem;">PHP · MySQL · JavaScript · HTML · CSS · Authentication</span>
+              </div>
+            </div>
+            <div class="d-flex gap-3">
+              <a href="https://bhushan-portfolio-five.vercel.app/" target="_blank" class="btn btn-cyber py-2 px-3">DEMO →</a>
+              <a href="https://github.com/2710-bhushan" target="_blank" class="btn btn-outline-secondary py-2 px-3"><i class="bx bxl-github align-middle"></i> GITHUB</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="col-lg-6">
+          <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between" style="border-left: 3px solid var(--accent);">
+            <div>
+              <span class="suite-badge mb-3 d-inline-block">MOVIESTREAM HUB</span>
+              <h4 class="display-font text-light mb-3">Online Movie Streaming Platform</h4>
+              <p class="text-secondary mb-4" style="font-size: 0.95rem;">
+                A movie streaming and download platform developed for users to explore, watch, and download entertainment content through a responsive web application.
+              </p>
+              <ul class="text-secondary mb-4" style="font-size: 0.9rem; list-style: none; padding: 0;">
+                <li><span class="indicator-dot"></span>Online movie streaming and download support</li>
+                <li><span class="indicator-dot"></span>Search and category-based content management</li>
+                <li><span class="indicator-dot"></span>Responsive media-focused user interface</li>
+              </ul>
+              <div class="mb-4">
+                <span class="mono-font text-muted" style="font-size: 0.7rem;">STACK:</span>
+                <span class="text-light" style="font-size: 0.85rem;">Python · Flask · JavaScript · MySQL · Bootstrap</span>
+              </div>
+            </div>
+            <div class="d-flex gap-3">
+              <a href="https://bhushan-portfolio-five.vercel.app/" target="_blank" class="btn btn-cyber py-2 px-3">DEMO →</a>
+              <a href="https://github.com/2710-bhushan/Online-Game-Playing" target="_blank" class="btn btn-outline-secondary py-2 px-3"><i class="bx bxl-github align-middle"></i> GITHUB</a>
             </div>
           </div>
         </div>
@@ -461,7 +644,7 @@
 
   <!-- Contact Section -->
   <section id="contact" class="py-5 my-5">
-    <div class="container">
+    <div class="container reveal">
       <div class="row g-5 align-items-center">
         <div class="col-lg-6">
           <span class="mono-font text-info d-block mb-2" style="font-size: 0.75rem;">// CONNECT DECK</span>
@@ -554,10 +737,11 @@
 
     // Simple typing animation
     const textArray = [
-      "MERN Stack Engineer ⚛️",
-      "Flask & Django Specialist 🐍",
-      "AI/ML Systems Integrator 🤖",
-      "Clean UI Architect 💻"
+      "Full Stack Developer ⚛️",
+      "MERN Stack Engineer 🌐",
+      "React Specialist 💻",
+      "API Architect ⚙️",
+      "UI/UX Enthusiast 🎨"
     ];
     let wordIndex = 0;
     let charIndex = 0;
@@ -591,15 +775,22 @@
     // Animate progress bars when visible
     const skillsSection = document.getElementById('skills');
     const fillElements = document.querySelectorAll('.progress-fill');
+    const revealElements = document.querySelectorAll('.reveal');
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          fillElements.forEach(el => {
-            el.style.width = el.getAttribute('data-width');
-          });
+          entry.target.classList.add('visible');
+          if (entry.target.id === 'skills') {
+            fillElements.forEach(el => {
+              el.style.width = el.getAttribute('data-width');
+            });
+          }
         }
       });
-    }, { threshold: 0.25 });
+    }, { threshold: 0.15 });
+
+    revealElements.forEach(el => observer.observe(el));
     observer.observe(skillsSection);
   </script>
 </body>
