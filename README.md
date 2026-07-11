@@ -93,39 +93,74 @@ I am a passionate **Full Stack Developer** from India 🇮🇳 focused on buildi
 
 ## 🌟 **Featured Projects**
 
-| 🚀 **Full Stack Service Booking Platform** |
-| :--- |
-| **Customer Service Portal** <br> A real-time online service booking platform developed for customers to hire electricians, plumbers, technicians, and home service providers through a secure digital workflow. <br><br> 🔷 *Real-time service booking and request management* <br> 🔷 *Customer and provider authentication workflow* <br> 🔷 *Modern responsive dashboard with API integration* <br><br> 🛠️ **Tech Stack:** `Python` · `Flask` · `JavaScript` · `SQLite3` · `REST API` · `Authentication` <br> 🔗 [**Demo →**](https://bhushan-portfolio-five.vercel.app/) \| [**GitHub ↗**](https://github.com/2710-bhushan/Customer_Service_Protal) |
-
-<br>
-
-| 🏦 **Enterprise Banking Management System** |
-| :--- |
-| **Bank Kiosk System** <br> A real-time banking kiosk and account management platform developed for handling customer onboarding, KYC verification, account services, transactions, and secure banking operations. <br><br> 🔷 *Customer account creation and KYC verification workflow* <br> 🔷 *Real-time deposit, withdrawal, and balance management system* <br> 🔷 *Secure transaction processing with database integration* <br><br> 🛠️ **Tech Stack:** `Java` · `Java Swing` · `MySQL` · `JDBC` · `Authentication` <br> 🔗 [**Demo →**](https://bhushan-portfolio-five.vercel.app/) \| [**GitHub ↗**](https://github.com/2710-bhushan/BOI-KISOK-SOFTWARE) |
-
-<br>
-
-| 🎓 **Educational Result Publishing System** |
-| :--- |
-| **Result Publishing Portal** <br> A secure result publishing platform developed for schools and colleges to instantly publish examination results online without affecting their existing academic systems. <br><br> 🔷 *Instant online result publishing workflow* <br> 🔷 *Independent portal integration without modifying existing systems* <br> 🔷 *Fast student result search and retrieval functionality* <br><br> 🛠️ **Tech Stack:** `Python` · `Flask` · `MySQL` · `HTML` · `CSS` · `JavaScript` <br> 🔗 [**Demo →**](https://bhushan-portfolio-five.vercel.app/) \| [**GitHub ↗**](https://github.com/2710-bhushan) |
-
-<br>
-
-| 🏥 **Real-Time Healthcare Management Platform** |
-| :--- |
-| **MediLink Emergency Network** <br> A real-time healthcare emergency platform developed for hospital bed booking, ambulance tracking, emergency requests, and live availability management across multiple city hospitals. <br><br> 🔷 *Real-time hospital bed availability system* <br> 🔷 *Emergency ambulance booking and tracking* <br> 🔷 *Multi-hospital live synchronization workflow* <br><br> 🛠️ **Tech Stack:** `Python` · `Flask` · `MongoDB` · `Socket.IO` · `REST API` <br> 🔗 [**Demo →**](https://bhushan-portfolio-five.vercel.app/) \| [**GitHub ↗**](https://github.com/2710-bhushan/SwasthyaSetu) |
-
-<br>
-
-| 💳 **Enterprise Internet Banking Management System** |
-| :--- |
-| **Real Internet Banking System** <br> A real-time enterprise banking and internet banking platform developed to simulate real-world banking operations including account management, KYC verification, online banking services, secure transactions, balance monitoring, and customer workflow automation. <br><br> 🔷 *Real-time internet banking system with secure customer login* <br> 🔷 *Account creation, KYC verification, deposit, withdrawal, and fund transfer modules* <br> 🔷 *Online banking dashboard with transaction history and balance management* <br><br> 🛠️ **Tech Stack:** `PHP` · `MySQL` · `JavaScript` · `HTML` · `CSS` · `Authentication` <br> 🔗 [**Demo →**](https://bhushan-portfolio-five.vercel.app/) \| [**GitHub ↗**](https://github.com/2710-bhushan) |
-
-<br>
-
-| 🎬 **Online Movie Streaming Platform** |
-| :--- |
-| **MovieStream Hub** <br> A movie streaming and download platform developed for users to explore, watch, and download entertainment content through a responsive web application. <br><br> 🔷 *Online movie streaming and download support* <br> 🔷 *Search and category-based content management* <br> 🔷 *Responsive media-focused user interface* <br><br> 🛠️ **Tech Stack:** `Python` · `Flask` · `JavaScript` · `MySQL` · `Bootstrap` <br> 🔗 [**Demo →**](https://bhushan-portfolio-five.vercel.app/) \| [**GitHub ↗**](https://github.com/2710-bhushan/Online-Game-Playing) |
+<table width="100%">
+  <!-- ROW 1 -->
+  <tr>
+    <td width="33.3%" valign="top">
+      <h3>🚀 Service Booking</h3>
+      <b>Customer Service Portal</b><br>
+      A real-time home service booking platform for hiring technicians.<br><br>
+      🔷 Booking &amp; request management<br>
+      🔷 Customer/provider auth<br>
+      🔷 Responsive API dashboard<br><br>
+      🛠️ <code>Flask</code> <code>SQLite3</code> <code>JS</code><br>
+      🔗 <a href="https://bhushan-portfolio-five.vercel.app/">Demo</a> | <a href="https://github.com/2710-bhushan/Customer_Service_Protal">GitHub</a>
+    </td>
+    <td width="33.3%" valign="top">
+      <h3>🏦 Bank Kiosk</h3>
+      <b>Management System</b><br>
+      A banking kiosk simulator handling onboarding, KYC, and transfers.<br><br>
+      🔷 Customer creation &amp; KYC<br>
+      🔷 Real-time balance operations<br>
+      🔷 Secure JDBC transaction engine<br><br>
+      🛠️ <code>Java</code> <code>Swing</code> <code>MySQL</code><br>
+      🔗 <a href="https://bhushan-portfolio-five.vercel.app/">Demo</a> | <a href="https://github.com/2710-bhushan/BOI-KISOK-SOFTWARE">GitHub</a>
+    </td>
+    <td width="33.3%" valign="top">
+      <h3>🎓 Result Portal</h3>
+      <b>Publishing System</b><br>
+      A secure results publishing portal for schools and colleges.<br><br>
+      🔷 Instant online publishing workflow<br>
+      🔷 Non-intrusive portal integration<br>
+      🔷 Fast student result query engine<br><br>
+      🛠️ <code>Flask</code> <code>MySQL</code> <code>HTML/CSS</code><br>
+      🔗 <a href="https://bhushan-portfolio-five.vercel.app/">Demo</a> | <a href="https://github.com/2710-bhushan">GitHub</a>
+    </td>
+  </tr>
+  <!-- ROW 2 -->
+  <tr>
+    <td width="33.3%" valign="top">
+      <h3>🏥 Healthcare Network</h3>
+      <b>MediLink Emergency</b><br>
+      A healthcare portal for ambulance booking and emergency hospital beds.<br><br>
+      🔷 Hospital bed availability mapping<br>
+      🔷 Ambulance booking &amp; tracking<br>
+      🔷 Multi-hospital sync system<br><br>
+      🛠️ <code>Flask</code> <code>MongoDB</code> <code>Socket.IO</code><br>
+      🔗 <a href="https://bhushan-portfolio-five.vercel.app/">Demo</a> | <a href="https://github.com/2710-bhushan/SwasthyaSetu">GitHub</a>
+    </td>
+    <td width="33.3%" valign="top">
+      <h3>💳 Internet Banking</h3>
+      <b>Real Banking System</b><br>
+      Simulated enterprise e-banking portal with secure transfers.<br><br>
+      🔷 Secure login &amp; transactions<br>
+      🔷 KYC &amp; transfer modules<br>
+      🔷 Complete transaction log logs<br><br>
+      🛠️ <code>PHP</code> <code>MySQL</code> <code>JavaScript</code><br>
+      🔗 <a href="https://bhushan-portfolio-five.vercel.app/">Demo</a> | <a href="https://github.com/2710-bhushan">GitHub</a>
+    </td>
+    <td width="33.3%" valign="top">
+      <h3>🎬 MovieStream</h3>
+      <b>Streaming Hub</b><br>
+      A media streaming portal to explore, stream, and download content.<br><br>
+      🔷 Movie streaming &amp; downloads<br>
+      🔷 Category-based content manager<br>
+      🔷 Responsive Bootstrap UI<br><br>
+      🛠️ <code>Flask</code> <code>MySQL</code> <code>Bootstrap</code><br>
+      🔗 <a href="https://bhushan-portfolio-five.vercel.app/">Demo</a> | <a href="https://github.com/2710-bhushan/Online-Game-Playing">GitHub</a>
+    </td>
+  </tr>
+</table>
 
 ---
 
