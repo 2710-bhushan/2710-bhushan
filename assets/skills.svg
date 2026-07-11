@@ -1,153 +1,126 @@
 <svg width="900" height="260" viewBox="0 0 900 260" fill="none" xmlns="http://www.w3.org/2000/svg">
   <style>
     :root {
-      --bg: #030712;
-      --bg-panel: rgba(255, 255, 255, 0.02);
-      --border: rgba(255, 255, 255, 0.08);
-      --text-main: #f3f4f6;
-      --text-muted: #9ca3af;
+      --bg: #020408;
+      --bg-panel: rgba(0, 240, 255, 0.02);
+      --border: rgba(0, 240, 255, 0.12);
+      --text-main: #e8f4f8;
+      --text-muted: #4a6070;
       --accent-1: #00f0ff;
-      --accent-2: #a855f7;
-      --accent-3: #f43f5e;
-      --bar-bg: rgba(255, 255, 255, 0.04);
-      --grid-opacity: 0.07;
-    }
-    @media (prefers-color-scheme: light) {
-      :root {
-        --bg: #ffffff;
-        --bg-panel: rgba(0, 0, 0, 0.02);
-        --border: rgba(0, 0, 0, 0.08);
-        --text-main: #1f2937;
-        --text-muted: #6b7280;
-        --accent-1: #0969da;
-        --accent-2: #8b5cf6;
-        --accent-3: #db2777;
-        --bar-bg: rgba(0, 0, 0, 0.05);
-        --grid-opacity: 0.04;
-      }
+      --accent-2: #7b2fff;
+      --accent-3: #ff3cac;
+      --bar-bg: rgba(255, 255, 255, 0.05);
+      --glow: drop-shadow(0px 0px 8px rgba(0, 240, 255, 0.4));
     }
 
-    .main-bg { fill: var(--bg); transition: fill 0.3s ease; }
-    .panel { fill: var(--bg-panel); stroke: var(--border); transition: all 0.3s ease; }
-    .text-main { fill: var(--text-main); font-family: 'Syne', 'Segoe UI', system-ui, sans-serif; transition: fill 0.3s ease; }
-    .text-muted { fill: var(--text-muted); font-family: 'Outfit', 'Segoe UI', system-ui, sans-serif; transition: fill 0.3s ease; }
+    .main-bg { fill: var(--bg); }
+    .panel { fill: var(--bg-panel); stroke: var(--border); stroke-width: 1; }
+    .text-main { fill: var(--text-main); font-family: 'Syne', 'Segoe UI', system-ui, sans-serif; }
+    .text-muted { fill: var(--text-muted); font-family: 'Outfit', 'Segoe UI', system-ui, sans-serif; }
     .mono { font-family: 'Space Mono', monospace; }
-    
-    /* Skill filling animation simulated via SVG SMIL */
+
+    /* Bar animations */
     .bar-fill {
       fill: none;
       stroke-linecap: round;
       stroke-dasharray: 200;
       stroke-dashoffset: 200;
-      animation: fillBar 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+      animation: fill-anim 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
     }
-
-    @keyframes fillBar {
+    @keyframes fill-anim {
       to { stroke-dashoffset: 0; }
     }
   </style>
 
   <defs>
-    <linearGradient id="gradient-accent-1" x1="0" y1="0" x2="200" y2="0" gradientUnits="userSpaceOnUse">
+    <linearGradient id="bar-grad-1" x1="0" y1="0" x2="240" y2="0" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="var(--accent-1)"/>
       <stop offset="100%" stop-color="var(--accent-2)"/>
     </linearGradient>
-    <linearGradient id="gradient-accent-2" x1="0" y1="0" x2="200" y2="0" gradientUnits="userSpaceOnUse">
+    <linearGradient id="bar-grad-2" x1="0" y1="0" x2="240" y2="0" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="var(--accent-2)"/>
       <stop offset="100%" stop-color="var(--accent-3)"/>
     </linearGradient>
-    <linearGradient id="gradient-accent-3" x1="0" y1="0" x2="200" y2="0" gradientUnits="userSpaceOnUse">
+    <linearGradient id="bar-grad-3" x1="0" y1="0" x2="240" y2="0" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="var(--accent-3)"/>
       <stop offset="100%" stop-color="var(--accent-1)"/>
     </linearGradient>
-    <pattern id="grid-pattern" width="30" height="30" patternUnits="userSpaceOnUse">
-      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="var(--text-main)" stroke-width="0.5" stroke-opacity="var(--grid-opacity)"/>
+    <pattern id="cyber-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="var(--accent-1)" stroke-width="0.5" stroke-opacity="0.08"/>
     </pattern>
-    <clipPath id="rect-clip"><rect width="900" height="260" rx="16"/></clipPath>
+    <clipPath id="card-clip"><rect width="900" height="260" rx="16"/></clipPath>
   </defs>
 
-  <!-- Background Base -->
+  <!-- Forced Dark Base -->
   <rect width="900" height="260" rx="16" class="main-bg"/>
-  <rect width="900" height="260" fill="url(#grid-pattern)" clip-path="url(#rect-clip)"/>
+  <rect width="900" height="260" fill="url(#cyber-grid)" clip-path="url(#card-clip)"/>
 
-  <!-- Section Label -->
-  <rect x="35" y="24" width="22" height="1" fill="var(--accent-1)" opacity="0.7"/>
-  <text x="65" y="29" class="text-main mono" font-size="9" font-weight="700" letter-spacing="3.5">TECH MATRIX</text>
-  <text x="35" y="60" class="text-main" font-size="24" font-weight="800" letter-spacing="-0.5">Skills &amp; Technologies</text>
+  <!-- Section label -->
+  <rect x="35" y="24" width="20" height="1" fill="var(--accent-1)" opacity="0.8"/>
+  <text x="62" y="29" class="text-main mono" font-size="9.5" fill="var(--accent-1)" letter-spacing="3.5">TECH MATRIX</text>
+  <text x="35" y="60" class="text-main" font-size="24" font-weight="900" letter-spacing="-0.5">Skills &amp; Technologies</text>
 
-  <!-- ── COLUMN 1: Frontend ── -->
+  <!-- Column 1: Frontend -->
   <g transform="translate(35, 80)">
-    <!-- Header -->
     <text x="0" y="15" class="text-main mono" font-size="11" font-weight="700" fill="var(--accent-1)">[ FRONTEND ]</text>
     
-    <!-- Skill 1: React / Next.js -->
     <text x="0" y="38" class="text-main" font-size="12" font-weight="600">React &amp; Next.js</text>
     <text x="240" y="38" class="text-muted mono" font-size="10" text-anchor="end">90%</text>
-    <line x1="0" y1="46" x2="240" y2="46" stroke="var(--bar-bg)" stroke-width="4" stroke-linecap="round"/>
-    <path d="M 0 46 L 216 46" stroke="url(#gradient-accent-1)" stroke-width="4" stroke-linecap="round" class="bar-fill"/>
+    <line x1="0" y1="46" x2="240" y2="46" stroke="var(--bar-bg)" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M 0 46 L 216 46" stroke="url(#bar-grad-1)" stroke-width="4.5" stroke-linecap="round" class="bar-fill" style="filter: var(--glow);"/>
 
-    <!-- Skill 2: Vue.js & HTML/CSS -->
     <text x="0" y="70" class="text-main" font-size="12" font-weight="600">Vue.js &amp; Tailwind</text>
     <text x="240" y="70" class="text-muted mono" font-size="10" text-anchor="end">85%</text>
-    <line x1="0" y1="78" x2="240" y2="78" stroke="var(--bar-bg)" stroke-width="4" stroke-linecap="round"/>
-    <path d="M 0 78 L 204 78" stroke="url(#gradient-accent-1)" stroke-width="4" stroke-linecap="round" class="bar-fill"/>
+    <line x1="0" y1="78" x2="240" y2="78" stroke="var(--bar-bg)" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M 0 78 L 204 78" stroke="url(#bar-grad-1)" stroke-width="4.5" stroke-linecap="round" class="bar-fill"/>
 
-    <!-- Skill 3: Vanilla JS / TS -->
     <text x="0" y="102" class="text-main" font-size="12" font-weight="600">JavaScript / TS</text>
     <text x="240" y="102" class="text-muted mono" font-size="10" text-anchor="end">80%</text>
-    <line x1="0" y1="110" x2="240" y2="110" stroke="var(--bar-bg)" stroke-width="4" stroke-linecap="round"/>
-    <path d="M 0 110 L 192 110" stroke="url(#gradient-accent-1)" stroke-width="4" stroke-linecap="round" class="bar-fill"/>
+    <line x1="0" y1="110" x2="240" y2="110" stroke="var(--bar-bg)" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M 0 110 L 192 110" stroke="url(#bar-grad-1)" stroke-width="4.5" stroke-linecap="round" class="bar-fill"/>
   </g>
 
-  <!-- ── COLUMN 2: Backend ── -->
+  <!-- Column 2: Backend -->
   <g transform="translate(325, 80)">
-    <!-- Header -->
     <text x="0" y="15" class="text-main mono" font-size="11" font-weight="700" fill="var(--accent-2)">[ BACKEND ]</text>
     
-    <!-- Skill 1: Flask & Django -->
     <text x="0" y="38" class="text-main" font-size="12" font-weight="600">Flask &amp; Django</text>
     <text x="240" y="38" class="text-muted mono" font-size="10" text-anchor="end">92%</text>
-    <line x1="0" y1="46" x2="240" y2="46" stroke="var(--bar-bg)" stroke-width="4" stroke-linecap="round"/>
-    <path d="M 0 46 L 220 46" stroke="url(#gradient-accent-2)" stroke-width="4" stroke-linecap="round" class="bar-fill"/>
+    <line x1="0" y1="46" x2="240" y2="46" stroke="var(--bar-bg)" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M 0 46 L 220 46" stroke="url(#bar-grad-2)" stroke-width="4.5" stroke-linecap="round" class="bar-fill"/>
 
-    <!-- Skill 2: Node.js & REST APIs -->
     <text x="0" y="70" class="text-main" font-size="12" font-weight="600">Node.js &amp; APIs</text>
     <text x="240" y="70" class="text-muted mono" font-size="10" text-anchor="end">85%</text>
-    <line x1="0" y1="78" x2="240" y2="78" stroke="var(--bar-bg)" stroke-width="4" stroke-linecap="round"/>
-    <path d="M 0 78 L 204 78" stroke="url(#gradient-accent-2)" stroke-width="4" stroke-linecap="round" class="bar-fill"/>
+    <line x1="0" y1="78" x2="240" y2="78" stroke="var(--bar-bg)" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M 0 78 L 204 78" stroke="url(#bar-grad-2)" stroke-width="4.5" stroke-linecap="round" class="bar-fill"/>
 
-    <!-- Skill 3: Databases (SQL / Mongo) -->
     <text x="0" y="102" class="text-main" font-size="12" font-weight="600">SQL &amp; MongoDB</text>
     <text x="240" y="102" class="text-muted mono" font-size="10" text-anchor="end">88%</text>
-    <line x1="0" y1="110" x2="240" y2="110" stroke="var(--bar-bg)" stroke-width="4" stroke-linecap="round"/>
-    <path d="M 0 110 L 211 110" stroke="url(#gradient-accent-2)" stroke-width="4" stroke-linecap="round" class="bar-fill"/>
+    <line x1="0" y1="110" x2="240" y2="110" stroke="var(--bar-bg)" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M 0 110 L 211 110" stroke="url(#bar-grad-2)" stroke-width="4.5" stroke-linecap="round" class="bar-fill"/>
   </g>
 
-  <!-- ── COLUMN 3: AI/ML & DevOps ── -->
+  <!-- Column 3: AI/ML & DevOps -->
   <g transform="translate(615, 80)">
-    <!-- Header -->
     <text x="0" y="15" class="text-main mono" font-size="11" font-weight="700" fill="var(--accent-3)">[ SYSTEM &amp; ML ]</text>
     
-    <!-- Skill 1: Python & scikit-learn -->
     <text x="0" y="38" class="text-main" font-size="12" font-weight="600">ML (scikit-learn)</text>
     <text x="240" y="38" class="text-muted mono" font-size="10" text-anchor="end">82%</text>
-    <line x1="0" y1="46" x2="240" y2="46" stroke="var(--bar-bg)" stroke-width="4" stroke-linecap="round"/>
-    <path d="M 0 46 L 196 46" stroke="url(#gradient-accent-3)" stroke-width="4" stroke-linecap="round" class="bar-fill"/>
+    <line x1="0" y1="46" x2="240" y2="46" stroke="var(--bar-bg)" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M 0 46 L 196 46" stroke="url(#bar-grad-3)" stroke-width="4.5" stroke-linecap="round" class="bar-fill"/>
 
-    <!-- Skill 2: Docker & DevOps -->
     <text x="0" y="70" class="text-main" font-size="12" font-weight="600">Docker &amp; AWS</text>
     <text x="240" y="70" class="text-muted mono" font-size="10" text-anchor="end">70%</text>
-    <line x1="0" y1="78" x2="240" y2="78" stroke="var(--bar-bg)" stroke-width="4" stroke-linecap="round"/>
-    <path d="M 0 78 L 168 78" stroke="url(#gradient-accent-3)" stroke-width="4" stroke-linecap="round" class="bar-fill"/>
+    <line x1="0" y1="78" x2="240" y2="78" stroke="var(--bar-bg)" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M 0 78 L 168 78" stroke="url(#bar-grad-3)" stroke-width="4.5" stroke-linecap="round" class="bar-fill"/>
 
-    <!-- Skill 3: Git & CI/CD -->
     <text x="0" y="102" class="text-main" font-size="12" font-weight="600">Git &amp; Workflow</text>
     <text x="240" y="102" class="text-muted mono" font-size="10" text-anchor="end">92%</text>
-    <line x1="0" y1="110" x2="240" y2="110" stroke="var(--bar-bg)" stroke-width="4" stroke-linecap="round"/>
-    <path d="M 0 110 L 220 110" stroke="url(#gradient-accent-3)" stroke-width="4" stroke-linecap="round" class="bar-fill"/>
+    <line x1="0" y1="110" x2="240" y2="110" stroke="var(--bar-bg)" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M 0 110 L 220 110" stroke="url(#bar-grad-3)" stroke-width="4.5" stroke-linecap="round" class="bar-fill"/>
   </g>
 
   <!-- Footnote tag list -->
-  <rect x="35" y="215" width="830" height="28" rx="6" class="panel" />
-  <text x="50" y="232" class="text-muted mono" font-size="9.5">CORE LANGUAGES: Python · Java · JavaScript · TypeScript · HTML5 · CSS3 · C/C++ · PHP</text>
+  <rect x="35" y="215" width="830" height="28" rx="4" class="panel" />
+  <text x="50" y="232" class="text-main mono" font-size="9" fill-opacity="0.8">CORE LANGUAGES: Python · Java · JavaScript · TypeScript · HTML5 · CSS3 · C/C++ · PHP</text>
 </svg>

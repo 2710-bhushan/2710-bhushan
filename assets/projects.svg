@@ -1,43 +1,28 @@
 <svg width="900" height="360" viewBox="0 0 900 360" fill="none" xmlns="http://www.w3.org/2000/svg">
   <style>
     :root {
-      --bg: #030712;
-      --bg-panel: rgba(255, 255, 255, 0.02);
-      --border: rgba(255, 255, 255, 0.08);
-      --text-main: #f3f4f6;
-      --text-muted: #9ca3af;
+      --bg: #020408;
+      --bg-panel: rgba(0, 240, 255, 0.02);
+      --border: rgba(0, 240, 255, 0.12);
+      --text-main: #e8f4f8;
+      --text-muted: #4a6070;
       --accent-1: #00f0ff;
-      --accent-2: #a855f7;
-      --accent-3: #f43f5e;
-      --accent-4: #10b981;
-      --grid-opacity: 0.07;
-    }
-    @media (prefers-color-scheme: light) {
-      :root {
-        --bg: #ffffff;
-        --bg-panel: rgba(0, 0, 0, 0.02);
-        --border: rgba(0, 0, 0, 0.08);
-        --text-main: #1f2937;
-        --text-muted: #6b7280;
-        --accent-1: #0969da;
-        --accent-2: #8b5cf6;
-        --accent-3: #db2777;
-        --accent-4: #059669;
-        --grid-opacity: 0.04;
-      }
+      --accent-2: #7b2fff;
+      --accent-3: #ff3cac;
+      --accent-4: #00e676;
+      --glow: drop-shadow(0px 0px 8px rgba(0, 240, 255, 0.4));
     }
 
-    .main-bg { fill: var(--bg); transition: fill 0.3s ease; }
-    .panel { fill: var(--bg-panel); stroke: var(--border); transition: all 0.3s ease; }
-    .text-main { fill: var(--text-main); font-family: 'Syne', 'Segoe UI', system-ui, sans-serif; transition: fill 0.3s ease; }
-    .text-muted { fill: var(--text-muted); font-family: 'Outfit', 'Segoe UI', system-ui, sans-serif; transition: fill 0.3s ease; }
+    .main-bg { fill: var(--bg); }
+    .panel { fill: var(--bg-panel); stroke: var(--border); stroke-width: 1; }
+    .text-main { fill: var(--text-main); font-family: 'Syne', 'Segoe UI', system-ui, sans-serif; }
+    .text-muted { fill: var(--text-muted); font-family: 'Outfit', 'Segoe UI', system-ui, sans-serif; }
     .mono { font-family: 'Space Mono', monospace; }
-    .tag { font-family: 'Space Mono', monospace; font-size: 8px; font-weight: 700; fill: var(--text-muted); }
+    .tag { font-family: 'Space Mono', monospace; font-size: 8px; font-weight: 700; fill: var(--text-main); fill-opacity: 0.85; }
 
-    /* Card pulse simulation */
     @keyframes stroke-pulse {
-      0%, 100% { stroke-opacity: 0.2; }
-      50% { stroke-opacity: 0.6; }
+      0%, 100% { stroke-opacity: 0.15; }
+      50% { stroke-opacity: 0.45; }
     }
     .pulsing-border {
       animation: stroke-pulse 4s infinite ease-in-out;
@@ -45,82 +30,74 @@
   </style>
 
   <defs>
-    <pattern id="grid-pattern" width="30" height="30" patternUnits="userSpaceOnUse">
-      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="var(--text-main)" stroke-width="0.5" stroke-opacity="var(--grid-opacity)"/>
+    <pattern id="cyber-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="var(--accent-1)" stroke-width="0.5" stroke-opacity="0.08"/>
     </pattern>
-    <clipPath id="rect-clip"><rect width="900" height="360" rx="16"/></clipPath>
+    <clipPath id="card-clip"><rect width="900" height="360" rx="16"/></clipPath>
   </defs>
 
-  <!-- Background Base -->
+  <!-- Forced Dark Base -->
   <rect width="900" height="360" rx="16" class="main-bg"/>
-  <rect width="900" height="360" fill="url(#grid-pattern)" clip-path="url(#rect-clip)"/>
+  <rect width="900" height="360" fill="url(#cyber-grid)" clip-path="url(#card-clip)"/>
 
   <!-- Section Label -->
-  <rect x="35" y="24" width="22" height="1" fill="var(--accent-1)" opacity="0.7"/>
-  <text x="65" y="29" class="text-main mono" font-size="9" font-weight="700" letter-spacing="3.5">ARCHIVES</text>
-  <text x="35" y="60" class="text-main" font-size="24" font-weight="800" letter-spacing="-0.5">Featured Projects</text>
+  <rect x="35" y="24" width="20" height="1" fill="var(--accent-1)" opacity="0.8"/>
+  <text x="62" y="29" class="text-main mono" font-size="9.5" fill="var(--accent-1)" letter-spacing="3.5">PORTFOLIO ARCHIVES</text>
+  <text x="35" y="60" class="text-main" font-size="24" font-weight="900" letter-spacing="-0.5">Featured Projects</text>
 
-  <!-- ── PROJECT CARD 1: Kiosk ── -->
+  <!-- Card 1: Bank Kiosk -->
   <g transform="translate(35, 80)">
-    <rect width="400" height="115" rx="10" class="panel pulsing-border" stroke="var(--accent-1)" />
-    <!-- Title -->
+    <rect width="400" height="115" rx="8" class="panel pulsing-border" stroke="var(--accent-1)" />
+    <path d="M 0 14 L 0 0 L 14 0" stroke="var(--accent-1)" stroke-width="1.5" fill="none"/>
     <text x="20" y="32" class="text-main" font-size="14" font-weight="800">🏦 Bank Kiosk Conversion Software</text>
     <text x="20" y="48" class="text-muted mono" font-size="8.5" fill="var(--accent-1)">FINTECH // JAVA</text>
-    <!-- Description -->
     <text x="20" y="68" class="text-muted" font-size="11">Modern transaction processing kiosk workflow conversion</text>
     <text x="20" y="82" class="text-muted" font-size="11">optimizing ATM system UI &amp; processing throughput.</text>
-    <!-- Tags -->
-    <rect x="20" y="93" width="36" height="12" rx="6" class="panel" />
+    <rect x="20" y="93" width="36" height="12" rx="4" class="panel" />
     <text x="38" y="102" class="tag" text-anchor="middle">Java</text>
-    <rect x="62" y="93" width="46" height="12" rx="6" class="panel" />
+    <rect x="62" y="93" width="46" height="12" rx="4" class="panel" />
     <text x="85" y="102" class="tag" text-anchor="middle">Fintech</text>
   </g>
 
-  <!-- ── PROJECT CARD 2: AI Suite ── -->
+  <!-- Card 2: AI Suite -->
   <g transform="translate(465, 80)">
-    <rect width="400" height="115" rx="10" class="panel pulsing-border" stroke="var(--accent-2)" />
-    <!-- Title -->
+    <rect width="400" height="115" rx="8" class="panel pulsing-border" stroke="var(--accent-2)" />
+    <path d="M 0 14 L 0 0 L 14 0" stroke="var(--accent-2)" stroke-width="1.5" fill="none"/>
     <text x="20" y="32" class="text-main" font-size="14" font-weight="800">🤖 AI/ML Campus Intelligence Suite</text>
     <text x="20" y="48" class="text-muted mono" font-size="8.5" fill="var(--accent-2)">MACHINE LEARNING // 10 APPS</text>
-    <!-- Description -->
     <text x="20" y="68" class="text-muted" font-size="11">NLP Resume parser, predictive model for student dropouts,</text>
     <text x="20" y="82" class="text-muted" font-size="11">crop scanning computer vision, and interview tutor.</text>
-    <!-- Tags -->
-    <rect x="20" y="93" width="44" height="12" rx="6" class="panel" />
+    <rect x="20" y="93" width="44" height="12" rx="4" class="panel" />
     <text x="42" y="102" class="tag" text-anchor="middle">Python</text>
-    <rect x="70" y="93" width="70" height="12" rx="6" class="panel" />
+    <rect x="70" y="93" width="70" height="12" rx="4" class="panel" />
     <text x="105" y="102" class="tag" text-anchor="middle">Scikit-Learn</text>
   </g>
 
-  <!-- ── PROJECT CARD 3: Campus Utility ── -->
+  <!-- Card 3: Campus Utility -->
   <g transform="translate(35, 215)">
-    <rect width="400" height="110" rx="10" class="panel pulsing-border" stroke="var(--accent-3)" />
-    <!-- Title -->
+    <rect width="400" height="110" rx="8" class="panel pulsing-border" stroke="var(--accent-3)" />
+    <path d="M 0 14 L 0 0 L 14 0" stroke="var(--accent-3)" stroke-width="1.5" fill="none"/>
     <text x="20" y="32" class="text-main" font-size="14" font-weight="800">🎓 Campus Utility Suite</text>
     <text x="20" y="48" class="text-muted mono" font-size="8.5" fill="var(--accent-3)">FLASK &amp; SQLITE // 10 APPS</text>
-    <!-- Description -->
     <text x="20" y="68" class="text-muted" font-size="11">Complaint system, live bus tracking, matching boards,</text>
     <text x="20" y="82" class="text-muted" font-size="11">lost &amp; found hub, skills share, and donor portal.</text>
-    <!-- Tags -->
-    <rect x="20" y="88" width="38" height="12" rx="6" class="panel" />
+    <rect x="20" y="88" width="38" height="12" rx="4" class="panel" />
     <text x="39" y="97" class="tag" text-anchor="middle">Flask</text>
-    <rect x="64" y="88" width="42" height="12" rx="6" class="panel" />
+    <rect x="64" y="88" width="42" height="12" rx="4" class="panel" />
     <text x="85" y="97" class="tag" text-anchor="middle">SQLite</text>
   </g>
 
-  <!-- ── PROJECT CARD 4: Community ── -->
+  <!-- Card 4: Community -->
   <g transform="translate(465, 215)">
-    <rect width="400" height="110" rx="10" class="panel pulsing-border" stroke="var(--accent-4)" />
-    <!-- Title -->
+    <rect width="400" height="110" rx="8" class="panel pulsing-border" stroke="var(--accent-4)" />
+    <path d="M 0 14 L 0 0 L 14 0" stroke="var(--accent-4)" stroke-width="1.5" fill="none"/>
     <text x="20" y="32" class="text-main" font-size="14" font-weight="800">🌍 Community Service Suite</text>
     <text x="20" y="48" class="text-muted mono" font-size="8.5" fill="var(--accent-4)">SECURE FLASK PORTAL // 10 APPS</text>
-    <!-- Description -->
     <text x="20" y="68" class="text-muted" font-size="11">Medicine trackers, SHA-256 certificate verification,</text>
     <text x="20" y="82" class="text-muted" font-size="11">disaster coordinate boards, and expense metrics.</text>
-    <!-- Tags -->
-    <rect x="20" y="88" width="54" height="12" rx="6" class="panel" />
+    <rect x="20" y="88" width="54" height="12" rx="4" class="panel" />
     <text x="47" y="97" class="tag" text-anchor="middle">SHA-256</text>
-    <rect x="80" y="88" width="38" height="12" rx="6" class="panel" />
+    <rect x="80" y="88" width="38" height="12" rx="4" class="panel" />
     <text x="99" y="97" class="tag" text-anchor="middle">Leaflet</text>
   </g>
 </svg>
