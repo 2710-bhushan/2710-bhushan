@@ -22,23 +22,24 @@
 
 <br/><br/>
 
+<!-- ═══════════════════════ UNIFIED SOCIAL BADGES ═══════════════════════ -->
 <a href="https://twitter.com/bhushan27102005" target="_blank">
-  <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white&labelColor=020408" alt="Twitter" />
+  <img src="https://img.shields.io/badge/Twitter-00f0ff?style=for-the-badge&logo=twitter&logoColor=black&labelColor=020408" alt="Twitter" />
 </a>&nbsp;
 <a href="https://linkedin.com/in/bhushan-ingale-3717212a7" target="_blank">
-  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=020408" alt="LinkedIn" />
+  <img src="https://img.shields.io/badge/LinkedIn-7b2fff?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=020408" alt="LinkedIn" />
 </a>&nbsp;
 <a href="https://instagram.com/bhushan_ingale_27" target="_blank">
-  <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white&labelColor=020408" alt="Instagram" />
+  <img src="https://img.shields.io/badge/Instagram-ff3cac?style=for-the-badge&logo=instagram&logoColor=white&labelColor=020408" alt="Instagram" />
 </a>&nbsp;
 <a href="https://www.facebook.com/profile.php?id=61553221501604" target="_blank">
-  <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white&labelColor=020408" alt="Facebook" />
+  <img src="https://img.shields.io/badge/Facebook-00f0ff?style=for-the-badge&logo=facebook&logoColor=black&labelColor=020408" alt="Facebook" />
 </a>&nbsp;
 <a href="mailto:bhushaningale2006@gmail.com">
-  <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=020408" alt="Gmail" />
+  <img src="https://img.shields.io/badge/Gmail-7b2fff?style=for-the-badge&logo=gmail&logoColor=white&labelColor=020408" alt="Gmail" />
 </a>&nbsp;
 <a href="https://bhushan-portfolio-five.vercel.app/" target="_blank">
-  <img src="https://img.shields.io/badge/Portfolio-00f0ff?style=for-the-badge&logo=vercel&logoColor=black&labelColor=020408" alt="Portfolio" />
+  <img src="https://img.shields.io/badge/Portfolio-ff3cac?style=for-the-badge&logo=vercel&logoColor=white&labelColor=020408" alt="Portfolio" />
 </a>
 
 </div>
@@ -181,22 +182,22 @@ I am a passionate **Full Stack Developer** from India 🇮🇳 focused on buildi
 
 <div align="center">
   <a href="https://twitter.com/bhushan27102005" target="_blank">
-    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white&labelColor=020408" />
+    <img src="https://img.shields.io/badge/Twitter-00f0ff?style=for-the-badge&logo=twitter&logoColor=black&labelColor=020408" alt="Twitter" />
   </a>&nbsp;
   <a href="https://linkedin.com/in/bhushan-ingale-3717212a7" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=020408" />
+    <img src="https://img.shields.io/badge/LinkedIn-7b2fff?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=020408" alt="LinkedIn" />
   </a>&nbsp;
   <a href="https://instagram.com/bhushan_ingale_27" target="_blank">
-    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white&labelColor=020408" />
+    <img src="https://img.shields.io/badge/Instagram-ff3cac?style=for-the-badge&logo=instagram&logoColor=white&labelColor=020408" alt="Instagram" />
   </a>&nbsp;
   <a href="https://www.facebook.com/profile.php?id=61553221501604" target="_blank">
-    <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white&labelColor=020408" />
+    <img src="https://img.shields.io/badge/Facebook-00f0ff?style=for-the-badge&logo=facebook&logoColor=black&labelColor=020408" alt="Facebook" />
   </a>&nbsp;
   <a href="mailto:bhushaningale2006@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=020408" />
+    <img src="https://img.shields.io/badge/Gmail-7b2fff?style=for-the-badge&logo=gmail&logoColor=white&labelColor=020408" alt="Gmail" />
   </a>&nbsp;
   <a href="https://bhushan-portfolio-five.vercel.app/" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-00f0ff?style=for-the-badge&logo=vercel&logoColor=black&labelColor=020408" />
+    <img src="https://img.shields.io/badge/Portfolio-ff3cac?style=for-the-badge&logo=vercel&logoColor=white&labelColor=020408" alt="Portfolio" />
   </a>
 </div>
 
