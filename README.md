@@ -93,87 +93,39 @@ I am a passionate **Full Stack Developer** from India 🇮🇳 focused on buildi
 
 ## 🌟 **Featured Projects**
 
-### 🚀 **Full Stack Service Booking Platform**
-> **Customer Service Portal**
-> A real-time online service booking platform developed for customers to hire electricians, plumbers, technicians, and home service providers through a secure digital workflow.
->
-> * ◆ Real-time service booking and request management
-> * ◆ Customer and provider authentication workflow
-> * ◆ Modern responsive dashboard with API integration
->
-> **Tech Stack:** `Python` | `Flask` | `JavaScript` | `SQLite3` | `REST API` | `Authentication`
->
-> [**Demo →**](https://bhushan-portfolio-five.vercel.app/) | [**GitHub ↗**](https://github.com/2710-bhushan/Customer_Service_Protal)
+| 🚀 **Full Stack Service Booking Platform** |
+| :--- |
+| **Customer Service Portal** <br> A real-time online service booking platform developed for customers to hire electricians, plumbers, technicians, and home service providers through a secure digital workflow. <br><br> 🔷 *Real-time service booking and request management* <br> 🔷 *Customer and provider authentication workflow* <br> 🔷 *Modern responsive dashboard with API integration* <br><br> 🛠️ **Tech Stack:** `Python` · `Flask` · `JavaScript` · `SQLite3` · `REST API` · `Authentication` <br> 🔗 [**Demo →**](https://bhushan-portfolio-five.vercel.app/) \| [**GitHub ↗**](https://github.com/2710-bhushan/Customer_Service_Protal) |
 
----
+<br>
 
-### 🚀 **Enterprise Banking Management System**
-> **Bank Kiosk System**
-> A real-time banking kiosk and account management platform developed for handling customer onboarding, KYC verification, account services, transactions, and secure banking operations.
->
-> * ◆ Customer account creation and KYC verification workflow
-> * ◆ Real-time deposit, withdrawal, and balance management system
-> * ◆ Secure transaction processing with database integration
->
-> **Tech Stack:** `Java` | `Java Swing` | `MySQL` | `JDBC` | `Authentication`
->
-> [**Demo →**](https://bhushan-portfolio-five.vercel.app/) | [**GitHub ↗**](https://github.com/2710-bhushan/BOI-KISOK-SOFTWARE)
+| 🏦 **Enterprise Banking Management System** |
+| :--- |
+| **Bank Kiosk System** <br> A real-time banking kiosk and account management platform developed for handling customer onboarding, KYC verification, account services, transactions, and secure banking operations. <br><br> 🔷 *Customer account creation and KYC verification workflow* <br> 🔷 *Real-time deposit, withdrawal, and balance management system* <br> 🔷 *Secure transaction processing with database integration* <br><br> 🛠️ **Tech Stack:** `Java` · `Java Swing` · `MySQL` · `JDBC` · `Authentication` <br> 🔗 [**Demo →**](https://bhushan-portfolio-five.vercel.app/) \| [**GitHub ↗**](https://github.com/2710-bhushan/BOI-KISOK-SOFTWARE) |
 
----
+<br>
 
-### 🚀 **Educational Result Publishing System**
-> **Result Publishing Portal**
-> A secure result publishing platform developed for schools and colleges to instantly publish examination results online without affecting their existing academic systems.
->
-> * ◆ Instant online result publishing workflow
-> * ◆ Independent portal integration without modifying existing systems
-> * ◆ Fast student result search and retrieval functionality
->
-> **Tech Stack:** `Python` | `Flask` | `MySQL` | `HTML` | `CSS` | `JavaScript`
->
-> [**Demo →**](https://bhushan-portfolio-five.vercel.app/) | [**GitHub ↗**](https://github.com/2710-bhushan)
+| 🎓 **Educational Result Publishing System** |
+| :--- |
+| **Result Publishing Portal** <br> A secure result publishing platform developed for schools and colleges to instantly publish examination results online without affecting their existing academic systems. <br><br> 🔷 *Instant online result publishing workflow* <br> 🔷 *Independent portal integration without modifying existing systems* <br> 🔷 *Fast student result search and retrieval functionality* <br><br> 🛠️ **Tech Stack:** `Python` · `Flask` · `MySQL` · `HTML` · `CSS` · `JavaScript` <br> 🔗 [**Demo →**](https://bhushan-portfolio-five.vercel.app/) \| [**GitHub ↗**](https://github.com/2710-bhushan) |
 
----
+<br>
 
-### 🚀 **Real-Time Healthcare Management Platform**
-> **MediLink Emergency Network**
-> A real-time healthcare emergency platform developed for hospital bed booking, ambulance tracking, emergency requests, and live availability management across multiple city hospitals.
->
-> * ◆ Real-time hospital bed availability system
-> * ◆ Emergency ambulance booking and tracking
-> * ◆ Multi-hospital live synchronization workflow
->
-> **Tech Stack:** `Python` | `Flask` | `MongoDB` | `Socket.IO` | `REST API`
->
-> [**Demo →**](https://bhushan-portfolio-five.vercel.app/) | [**GitHub ↗**](https://github.com/2710-bhushan/SwasthyaSetu)
+| 🏥 **Real-Time Healthcare Management Platform** |
+| :--- |
+| **MediLink Emergency Network** <br> A real-time healthcare emergency platform developed for hospital bed booking, ambulance tracking, emergency requests, and live availability management across multiple city hospitals. <br><br> 🔷 *Real-time hospital bed availability system* <br> 🔷 *Emergency ambulance booking and tracking* <br> 🔷 *Multi-hospital live synchronization workflow* <br><br> 🛠️ **Tech Stack:** `Python` · `Flask` · `MongoDB` · `Socket.IO` · `REST API` <br> 🔗 [**Demo →**](https://bhushan-portfolio-five.vercel.app/) \| [**GitHub ↗**](https://github.com/2710-bhushan/SwasthyaSetu) |
 
----
+<br>
 
-### 🚀 **Enterprise Internet Banking Management System**
-> **Real Internet Banking System**
-> A real-time enterprise banking and internet banking platform developed to simulate real-world banking operations including account management, KYC verification, online banking services, secure transactions, balance monitoring, and customer workflow automation.
->
-> * ◆ Real-time internet banking system with secure customer login
-> * ◆ Account creation, KYC verification, deposit, withdrawal, and fund transfer modules
-> * ◆ Online banking dashboard with transaction history and balance management
->
-> **Tech Stack:** `PHP` | `MySQL` | `JavaScript` | `HTML` | `CSS` | `Authentication`
->
-> [**Demo →**](https://bhushan-portfolio-five.vercel.app/) | [**GitHub ↗**](https://github.com/2710-bhushan)
+| 💳 **Enterprise Internet Banking Management System** |
+| :--- |
+| **Real Internet Banking System** <br> A real-time enterprise banking and internet banking platform developed to simulate real-world banking operations including account management, KYC verification, online banking services, secure transactions, balance monitoring, and customer workflow automation. <br><br> 🔷 *Real-time internet banking system with secure customer login* <br> 🔷 *Account creation, KYC verification, deposit, withdrawal, and fund transfer modules* <br> 🔷 *Online banking dashboard with transaction history and balance management* <br><br> 🛠️ **Tech Stack:** `PHP` · `MySQL` · `JavaScript` · `HTML` · `CSS` · `Authentication` <br> 🔗 [**Demo →**](https://bhushan-portfolio-five.vercel.app/) \| [**GitHub ↗**](https://github.com/2710-bhushan) |
 
----
+<br>
 
-### 🚀 **Online Movie Streaming Platform**
-> **MovieStream Hub**
-> A movie streaming and download platform developed for users to explore, watch, and download entertainment content through a responsive web application.
->
-> * ◆ Online movie streaming and download support
-> * ◆ Search and category-based content management
-> * ◆ Responsive media-focused user interface
->
-> **Tech Stack:** `Python` | `Flask` | `JavaScript` | `MySQL` | `Bootstrap`
->
-> [**Demo →**](https://bhushan-portfolio-five.vercel.app/) | [**GitHub ↗**](https://github.com/2710-bhushan/Online-Game-Playing)
+| 🎬 **Online Movie Streaming Platform** |
+| :--- |
+| **MovieStream Hub** <br> A movie streaming and download platform developed for users to explore, watch, and download entertainment content through a responsive web application. <br><br> 🔷 *Online movie streaming and download support* <br> 🔷 *Search and category-based content management* <br> 🔷 *Responsive media-focused user interface* <br><br> 🛠️ **Tech Stack:** `Python` · `Flask` · `JavaScript` · `MySQL` · `Bootstrap` <br> 🔗 [**Demo →**](https://bhushan-portfolio-five.vercel.app/) \| [**GitHub ↗**](https://github.com/2710-bhushan/Online-Game-Playing) |
 
 ---
 
