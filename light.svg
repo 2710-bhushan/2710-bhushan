@@ -1,0 +1,519 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="610" viewBox="0 0 1180 610" role="img" aria-label="Bhushan Ingale - Full Stack Developer Profile Banner">
+  <title>Bhushan Ingale | Full Stack Developer</title>
+
+  <defs>
+    <!-- === GRADIENTS === -->
+    <linearGradient id="l-bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#F1F5F9"/>
+    </linearGradient>
+
+    <linearGradient id="l-panel-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC" stop-opacity="0.97"/>
+      <stop offset="100%" stop-color="#F1F5F9" stop-opacity="0.97"/>
+    </linearGradient>
+
+    <linearGradient id="l-accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="50%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#10B981"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-0.5 0;0.5 0;-0.5 0" dur="4s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <linearGradient id="l-ascii-grad" x1="0%" y1="0%" x2="100%" y2="100%" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2563EB">
+        <animate attributeName="stop-color" values="#2563EB;#06B6D4;#10B981;#2563EB" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#06B6D4">
+        <animate attributeName="stop-color" values="#06B6D4;#10B981;#2563EB;#06B6D4" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#10B981">
+        <animate attributeName="stop-color" values="#10B981;#2563EB;#06B6D4;#10B981" dur="6s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <linearGradient id="l-border-shimmer" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="rgba(15,23,42,0)" />
+      <stop offset="40%" stop-color="rgba(37,99,235,0.4)">
+        <animate attributeName="offset" values="0;1;0" dur="3s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="60%" stop-color="rgba(6,182,212,0.5)">
+        <animate attributeName="offset" values="0.2;1.2;0.2" dur="3s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="rgba(15,23,42,0)" />
+    </linearGradient>
+
+    <linearGradient id="l-header-bar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.7"/>
+      <stop offset="50%" stop-color="#06B6D4" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0.7"/>
+    </linearGradient>
+
+    <linearGradient id="l-name-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+
+    <radialGradient id="l-glow-blue" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#BFDBFE" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#BFDBFE" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="l-glow-cyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#A5F3FC" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#A5F3FC" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="l-glow-emerald" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#A7F3D0" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#A7F3D0" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="l-ascii-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#BFDBFE" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#BFDBFE" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Glass reflection -->
+    <linearGradient id="l-glass-reflect" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.95)"/>
+      <stop offset="40%" stop-color="rgba(255,255,255,0.4)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </linearGradient>
+
+    <!-- Skill pill gradients -->
+    <linearGradient id="l-pill-blue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0.12"/>
+    </linearGradient>
+    <linearGradient id="l-pill-green" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0.12"/>
+    </linearGradient>
+    <linearGradient id="l-pill-purple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0.1"/>
+    </linearGradient>
+
+    <!-- === FILTERS === -->
+    <filter id="l-glow-strong" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="l-glow-soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="l-bg-blur" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="60"/>
+    </filter>
+
+    <filter id="l-shadow-panel" x="-5%" y="-5%" width="110%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="16" flood-color="#94A3B8" flood-opacity="0.2"/>
+    </filter>
+
+    <filter id="l-pill-glow" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="l-text-glow-blue" x="-10%" y="-50%" width="120%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- === CLIP PATHS === -->
+    <clipPath id="l-main-clip">
+      <rect width="1180" height="610" rx="20" ry="20"/>
+    </clipPath>
+
+    <clipPath id="l-left-clip">
+      <rect x="12" y="12" width="432" height="586" rx="14" ry="14"/>
+    </clipPath>
+
+    <clipPath id="l-right-clip">
+      <rect x="456" y="12" width="712" height="586" rx="14" ry="14"/>
+    </clipPath>
+
+    <!-- MASKS for sequential reveal -->
+    <mask id="l-mask-l1"><rect x="0" y="0" width="1180" height="610" fill="black"/><rect x="0" y="0" width="1180" height="610" fill="white"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.05;0.07;1" dur="12s" fill="freeze"/></rect></mask>
+    <mask id="l-mask-l2"><rect x="0" y="0" width="1180" height="610" fill="black"/><rect x="0" y="0" width="1180" height="610" fill="white"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.1;0.12;1" dur="12s" fill="freeze"/></rect></mask>
+    <mask id="l-mask-l3"><rect x="0" y="0" width="1180" height="610" fill="black"/><rect x="0" y="0" width="1180" height="610" fill="white"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.15;0.17;1" dur="12s" fill="freeze"/></rect></mask>
+    <mask id="l-mask-l4"><rect x="0" y="0" width="1180" height="610" fill="black"/><rect x="0" y="0" width="1180" height="610" fill="white"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.2;0.22;1" dur="12s" fill="freeze"/></rect></mask>
+    <mask id="l-mask-l5"><rect x="0" y="0" width="1180" height="610" fill="black"/><rect x="0" y="0" width="1180" height="610" fill="white"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.25;0.27;1" dur="12s" fill="freeze"/></rect></mask>
+    <mask id="l-mask-l6"><rect x="0" y="0" width="1180" height="610" fill="black"/><rect x="0" y="0" width="1180" height="610" fill="white"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.3;0.32;1" dur="12s" fill="freeze"/></rect></mask>
+    <mask id="l-mask-l7"><rect x="0" y="0" width="1180" height="610" fill="black"/><rect x="0" y="0" width="1180" height="610" fill="white"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.35;0.37;1" dur="12s" fill="freeze"/></rect></mask>
+    <mask id="l-mask-l8"><rect x="0" y="0" width="1180" height="610" fill="black"/><rect x="0" y="0" width="1180" height="610" fill="white"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.4;0.42;1" dur="12s" fill="freeze"/></rect></mask>
+    <mask id="l-mask-l9"><rect x="0" y="0" width="1180" height="610" fill="black"/><rect x="0" y="0" width="1180" height="610" fill="white"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.45;0.47;1" dur="12s" fill="freeze"/></rect></mask>
+    <mask id="l-mask-l10"><rect x="0" y="0" width="1180" height="610" fill="black"/><rect x="0" y="0" width="1180" height="610" fill="white"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.5;0.52;1" dur="12s" fill="freeze"/></rect></mask>
+    <mask id="l-mask-info1"><rect x="0" y="0" width="1180" height="610" fill="black"/><rect x="0" y="0" width="1180" height="610" fill="white"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.55;0.57;1" dur="12s" fill="freeze"/></rect></mask>
+    <mask id="l-mask-info2"><rect x="0" y="0" width="1180" height="610" fill="black"/><rect x="0" y="0" width="1180" height="610" fill="white"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.6;0.62;1" dur="12s" fill="freeze"/></rect></mask>
+    <mask id="l-mask-info3"><rect x="0" y="0" width="1180" height="610" fill="black"/><rect x="0" y="0" width="1180" height="610" fill="white"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.65;0.67;1" dur="12s" fill="freeze"/></rect></mask>
+    <mask id="l-mask-info4"><rect x="0" y="0" width="1180" height="610" fill="black"/><rect x="0" y="0" width="1180" height="610" fill="white"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.7;0.72;1" dur="12s" fill="freeze"/></rect></mask>
+    <mask id="l-mask-info5"><rect x="0" y="0" width="1180" height="610" fill="black"/><rect x="0" y="0" width="1180" height="610" fill="white"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.75;0.77;1" dur="12s" fill="freeze"/></rect></mask>
+    <mask id="l-mask-skills"><rect x="0" y="0" width="1180" height="610" fill="black"/><rect x="0" y="0" width="1180" height="610" fill="white"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.8;0.82;1" dur="12s" fill="freeze"/></rect></mask>
+    <mask id="l-mask-socials"><rect x="0" y="0" width="1180" height="610" fill="black"/><rect x="0" y="0" width="1180" height="610" fill="white"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.88;0.9;1" dur="12s" fill="freeze"/></rect></mask>
+  </defs>
+
+  <!-- ==================== ROOT CONTAINER ==================== -->
+  <g clip-path="url(#l-main-clip)">
+
+    <!-- === BACKGROUND === -->
+    <rect width="1180" height="610" fill="url(#l-bg-grad)"/>
+
+    <!-- Animated floating radial glow blobs (subtle for light mode) -->
+    <g filter="url(#l-bg-blur)">
+      <ellipse cx="150" cy="200" rx="280" ry="220" fill="url(#l-glow-blue)" opacity="0.8">
+        <animate attributeName="cx" values="150;200;120;150" dur="12s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="200;150;250;200" dur="10s" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse cx="900" cy="150" rx="300" ry="240" fill="url(#l-glow-cyan)" opacity="0.8">
+        <animate attributeName="cx" values="900;850;950;900" dur="14s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="150;200;100;150" dur="11s" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse cx="1050" cy="500" rx="240" ry="190" fill="url(#l-glow-emerald)" opacity="0.7">
+        <animate attributeName="cx" values="1050;980;1100;1050" dur="13s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="500;450;540;500" dur="9s" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse cx="300" cy="520" rx="220" ry="170" fill="url(#l-glow-cyan)" opacity="0.5">
+        <animate attributeName="cx" values="300;360;260;300" dur="15s" repeatCount="indefinite"/>
+      </ellipse>
+    </g>
+
+    <!-- Moving scanline (lighter for light mode) -->
+    <rect x="0" y="0" width="1180" height="2" fill="rgba(37,99,235,0.05)">
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,610;0,0" dur="8s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Animated particles -->
+    <g opacity="0.4">
+      <circle cx="80" cy="80" r="1.5" fill="#2563EB"><animate attributeName="opacity" values="0;1;0" dur="3s" repeatCount="indefinite"/><animateMotion path="M0,0 Q20,-30 40,0 Q20,30 0,0" dur="5s" repeatCount="indefinite"/></circle>
+      <circle cx="200" cy="400" r="1" fill="#06B6D4"><animate attributeName="opacity" values="0;1;0" dur="4s" begin="1s" repeatCount="indefinite"/><animateMotion path="M0,0 Q-15,-25 0,-50 Q15,-25 0,0" dur="6s" repeatCount="indefinite"/></circle>
+      <circle cx="350" cy="150" r="1.2" fill="#10B981"><animate attributeName="opacity" values="0;1;0" dur="3.5s" begin="0.5s" repeatCount="indefinite"/><animateMotion path="M0,0 Q10,20 0,40 Q-10,20 0,0" dur="7s" repeatCount="indefinite"/></circle>
+      <circle cx="700" cy="80" r="1.5" fill="#2563EB"><animate attributeName="opacity" values="0;1;0" dur="2.5s" begin="2s" repeatCount="indefinite"/><animateMotion path="M0,0 Q25,-15 0,-30 Q-25,-15 0,0" dur="4s" repeatCount="indefinite"/></circle>
+      <circle cx="950" cy="300" r="1" fill="#06B6D4"><animate attributeName="opacity" values="0;1;0" dur="4s" begin="1.5s" repeatCount="indefinite"/><animateMotion path="M0,0 Q20,20 40,0 Q20,-20 0,0" dur="5.5s" repeatCount="indefinite"/></circle>
+      <circle cx="1100" cy="180" r="1.3" fill="#10B981"><animate attributeName="opacity" values="0;1;0" dur="3s" begin="0.8s" repeatCount="indefinite"/><animateMotion path="M0,0 Q-20,15 0,30 Q20,15 0,0" dur="6s" repeatCount="indefinite"/></circle>
+      <circle cx="600" cy="500" r="1.1" fill="#2563EB"><animate attributeName="opacity" values="0;1;0" dur="3.8s" begin="2.5s" repeatCount="indefinite"/><animateMotion path="M0,0 Q15,-10 0,-20 Q-15,-10 0,0" dur="4.5s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <!-- ==================== LEFT PANEL (ASCII TERMINAL) ==================== -->
+    <!-- Panel shadow -->
+    <rect x="12" y="12" width="432" height="586" rx="14" fill="rgba(0,0,0,0.05)" filter="url(#l-shadow-panel)"/>
+
+    <!-- Panel background -->
+    <rect x="12" y="12" width="432" height="586" rx="14" fill="#0F172A"/>
+
+    <!-- Glass reflection left panel -->
+    <rect x="12" y="12" width="432" height="180" rx="14" fill="url(#l-glass-reflect)" opacity="0.05"/>
+
+    <!-- Left panel border -->
+    <rect x="12" y="12" width="432" height="586" rx="14" fill="none" stroke="url(#l-border-shimmer)" stroke-width="1.5"/>
+    <rect x="12" y="12" width="432" height="586" rx="14" fill="none" stroke="rgba(15,23,42,0.2)" stroke-width="1"/>
+
+    <!-- Terminal header bar -->
+    <rect x="12" y="12" width="432" height="36" rx="14" fill="rgba(255,255,255,0.05)"/>
+    <rect x="12" y="36" width="432" height="12" fill="rgba(255,255,255,0.05)"/>
+
+    <!-- Traffic lights -->
+    <circle cx="38" cy="30" r="6" fill="#FF5F57">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="58" cy="30" r="6" fill="#FFBD2E">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="78" cy="30" r="6" fill="#28CA41">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" begin="0.6s" repeatCount="indefinite"/>
+    </circle>
+
+    <text x="228" y="33" text-anchor="middle" font-family="'SF Mono', 'Courier New', monospace" font-size="11" fill="rgba(148,163,184,0.8)" letter-spacing="2">BHUSHAN.ASCII</text>
+
+    <!-- ASCII art glow halo -->
+    <ellipse cx="228" cy="330" rx="170" ry="230" fill="url(#l-ascii-glow)" opacity="0.5">
+      <animate attributeName="rx" values="170;190;170" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0.7;0.5" dur="3s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- ASCII ART - floating with gradient, line-by-line reveal -->
+    <g clip-path="url(#l-left-clip)" filter="url(#l-text-glow-blue)">
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="0,0;0,-8;0,0" dur="4s" repeatCount="indefinite"/>
+
+        <text mask="url(#l-mask-l1)" x="228" y="102" text-anchor="middle" font-family="'Courier New', monospace" font-size="9.5" fill="url(#l-ascii-grad)" letter-spacing="1.5">  ██████╗ ██╗  ██╗██╗   ██╗███████╗██╗  ██╗</text>
+        <text mask="url(#l-mask-l2)" x="228" y="116" text-anchor="middle" font-family="'Courier New', monospace" font-size="9.5" fill="url(#l-ascii-grad)" letter-spacing="1.5">  ██╔══██╗██║  ██║██║   ██║██╔════╝██║  ██║</text>
+        <text mask="url(#l-mask-l3)" x="228" y="130" text-anchor="middle" font-family="'Courier New', monospace" font-size="9.5" fill="url(#l-ascii-grad)" letter-spacing="1.5">  ██████╔╝███████║██║   ██║███████╗███████║</text>
+        <text mask="url(#l-mask-l4)" x="228" y="144" text-anchor="middle" font-family="'Courier New', monospace" font-size="9.5" fill="url(#l-ascii-grad)" letter-spacing="1.5">  ██╔══██╗██╔══██║██║   ██║╚════██║██╔══██║</text>
+        <text mask="url(#l-mask-l5)" x="228" y="158" text-anchor="middle" font-family="'Courier New', monospace" font-size="9.5" fill="url(#l-ascii-grad)" letter-spacing="1.5">  ██████╔╝██║  ██║╚██████╔╝███████║██║  ██║</text>
+        <text mask="url(#l-mask-l6)" x="228" y="172" text-anchor="middle" font-family="'Courier New', monospace" font-size="9.5" fill="url(#l-ascii-grad)" letter-spacing="1.5">  ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝  ╚═╝</text>
+
+        <text mask="url(#l-mask-l7)" x="228" y="190" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" fill="rgba(37,99,235,0.4)" letter-spacing="1">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</text>
+
+        <text mask="url(#l-mask-l7)" x="228" y="215" text-anchor="middle" font-family="'Courier New', monospace" font-size="9.5" fill="url(#l-ascii-grad)" letter-spacing="1.5">  ██╗███╗   ██╗ ██████╗  █████╗ ██╗     ███████╗</text>
+        <text mask="url(#l-mask-l8)" x="228" y="229" text-anchor="middle" font-family="'Courier New', monospace" font-size="9.5" fill="url(#l-ascii-grad)" letter-spacing="1.5">  ██║████╗  ██║██╔════╝ ██╔══██╗██║     ██╔════╝</text>
+        <text mask="url(#l-mask-l9)" x="228" y="243" text-anchor="middle" font-family="'Courier New', monospace" font-size="9.5" fill="url(#l-ascii-grad)" letter-spacing="1.5">  ██║██╔██╗ ██║██║  ███╗███████║██║     █████╗</text>
+        <text mask="url(#l-mask-l10)" x="228" y="257" text-anchor="middle" font-family="'Courier New', monospace" font-size="9.5" fill="url(#l-ascii-grad)" letter-spacing="1.5">  ██║██║╚██╗██║██║   ██║██╔══██║██║     ██╔══╝</text>
+        <text mask="url(#l-mask-l10)" x="228" y="271" text-anchor="middle" font-family="'Courier New', monospace" font-size="9.5" fill="url(#l-ascii-grad)" letter-spacing="1.5">  ██║██║ ╚████║╚██████╔╝██║  ██║███████╗███████╗</text>
+        <text mask="url(#l-mask-l10)" x="228" y="285" text-anchor="middle" font-family="'Courier New', monospace" font-size="9.5" fill="url(#l-ascii-grad)" letter-spacing="1.5">  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝╚══════╝</text>
+
+        <text mask="url(#l-mask-l10)" x="228" y="300" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" fill="rgba(37,99,235,0.4)" letter-spacing="1">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</text>
+
+        <text mask="url(#l-mask-info1)" x="38" y="325" font-family="'Courier New', monospace" font-size="10" fill="#06B6D4">$ </text>
+        <text mask="url(#l-mask-info1)" x="54" y="325" font-family="'Courier New', monospace" font-size="10" fill="#64748B">whoami</text>
+        <text mask="url(#l-mask-info2)" x="38" y="341" font-family="'Courier New', monospace" font-size="10" fill="#10B981">→</text>
+        <text mask="url(#l-mask-info2)" x="54" y="341" font-family="'Courier New', monospace" font-size="10" fill="#CBD5E1">Full Stack Developer from India 🇮🇳</text>
+
+        <text mask="url(#l-mask-info3)" x="38" y="361" font-family="'Courier New', monospace" font-size="10" fill="#06B6D4">$ </text>
+        <text mask="url(#l-mask-info3)" x="54" y="361" font-family="'Courier New', monospace" font-size="10" fill="#64748B">cat status.log</text>
+        <text mask="url(#l-mask-info4)" x="38" y="377" font-family="'Courier New', monospace" font-size="10" fill="#10B981">→</text>
+        <text mask="url(#l-mask-info4)" x="54" y="377" font-family="'Courier New', monospace" font-size="10" fill="#CBD5E1">Building: Bank Kiosk Software</text>
+
+        <text mask="url(#l-mask-info5)" x="38" y="397" font-family="'Courier New', monospace" font-size="10" fill="#06B6D4">$ </text>
+        <text mask="url(#l-mask-info5)" x="54" y="397" font-family="'Courier New', monospace" font-size="10" fill="#64748B">cat learning.txt</text>
+        <text mask="url(#l-mask-info5)" x="38" y="413" font-family="'Courier New', monospace" font-size="10" fill="#10B981">→</text>
+        <text mask="url(#l-mask-info5)" x="54" y="413" font-family="'Courier New', monospace" font-size="10" fill="#CBD5E1">React Native • Next.js • Docker</text>
+
+        <text mask="url(#l-mask-skills)" x="38" y="433" font-family="'Courier New', monospace" font-size="10" fill="#06B6D4">$ </text>
+        <text mask="url(#l-mask-skills)" x="54" y="433" font-family="'Courier New', monospace" font-size="10" fill="#64748B">echo $PORTFOLIO</text>
+        <text mask="url(#l-mask-skills)" x="38" y="449" font-family="'Courier New', monospace" font-size="10" fill="#10B981">→</text>
+        <text mask="url(#l-mask-skills)" x="54" y="449" font-family="'Courier New', monospace" font-size="10" fill="#06B6D4" text-decoration="underline">bhushan-portfolio-five.vercel.app</text>
+
+        <!-- Blinking cursor -->
+        <rect mask="url(#l-mask-socials)" x="38" y="468" width="8" height="12" fill="#2563EB">
+          <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+        </rect>
+        <text mask="url(#l-mask-socials)" x="50" y="479" font-family="'Courier New', monospace" font-size="10" fill="#06B6D4">_ ready</text>
+
+        <!-- Status bar -->
+        <rect x="12" y="560" width="432" height="38" fill="rgba(37,99,235,0.08)"/>
+        <text x="28" y="583" font-family="'Courier New', monospace" font-size="9" fill="#2563EB">● ONLINE</text>
+        <text x="100" y="583" font-family="'Courier New', monospace" font-size="9" fill="#64748B">GCOEJ • Pune, India</text>
+        <text x="330" y="583" font-family="'Courier New', monospace" font-size="9" fill="#10B981">v2.0.26</text>
+      </g>
+    </g>
+
+    <!-- ==================== RIGHT PANEL (PROFESSIONAL TERMINAL) ==================== -->
+    <rect x="456" y="12" width="712" height="586" rx="14" fill="rgba(148,163,184,0.1)" filter="url(#l-shadow-panel)"/>
+    <rect x="456" y="12" width="712" height="586" rx="14" fill="url(#l-panel-grad)"/>
+    <rect x="456" y="12" width="712" height="180" rx="14" fill="url(#l-glass-reflect)" opacity="0.6"/>
+    <rect x="456" y="12" width="712" height="586" rx="14" fill="none" stroke="url(#l-border-shimmer)" stroke-width="1.5"/>
+    <rect x="456" y="12" width="712" height="586" rx="14" fill="none" stroke="rgba(15,23,42,0.1)" stroke-width="1"/>
+
+    <!-- Right panel header bar -->
+    <rect x="456" y="12" width="712" height="36" rx="14" fill="rgba(15,23,42,0.03)"/>
+    <rect x="456" y="36" width="712" height="12" fill="rgba(15,23,42,0.03)"/>
+
+    <circle cx="482" cy="30" r="6" fill="#FF5F57" opacity="0.8"/>
+    <circle cx="502" cy="30" r="6" fill="#FFBD2E" opacity="0.8"/>
+    <circle cx="522" cy="30" r="6" fill="#28CA41" opacity="0.8"/>
+    <text x="812" y="33" text-anchor="middle" font-family="'SF Mono', 'Courier New', monospace" font-size="11" fill="rgba(71,85,105,0.8)" letter-spacing="2">TERMINAL — bash</text>
+
+    <rect x="456" y="47" width="712" height="2" fill="url(#l-header-bar)">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- === GREETING SECTION === -->
+    <g mask="url(#l-mask-l1)">
+      <text x="480" y="92" font-family="'Courier New', monospace" font-size="11" fill="#2563EB">❯</text>
+      <text x="498" y="92" font-family="'Courier New', monospace" font-size="11" fill="#475569">./greet.sh --user=bhushan</text>
+    </g>
+
+    <g mask="url(#l-mask-l2)">
+      <text x="480" y="118" font-family="'Courier New', monospace" font-size="24" fill="#0F172A" font-weight="bold" letter-spacing="-0.5">Hi there 👋</text>
+    </g>
+
+    <g mask="url(#l-mask-l3)" filter="url(#l-text-glow-blue)">
+      <text x="480" y="152" font-family="'SF Pro Display', 'Helvetica Neue', sans-serif" font-size="34" font-weight="700" fill="url(#l-name-grad)" letter-spacing="-1">I'm Bhushan Ingale</text>
+    </g>
+
+    <g mask="url(#l-mask-l4)">
+      <rect x="480" y="162" width="300" height="2" rx="1" fill="url(#l-accent-grad)"/>
+    </g>
+
+    <g mask="url(#l-mask-l5)">
+      <text x="480" y="196" font-family="'Courier New', monospace" font-size="11" fill="#2563EB">❯</text>
+      <text x="498" y="196" font-family="'Courier New', monospace" font-size="11" fill="#475569">echo $CURRENT_ROLE</text>
+    </g>
+
+    <g mask="url(#l-mask-l6)">
+      <text x="480" y="222" font-family="'Courier New', monospace" font-size="16" fill="#10B981" font-weight="600" letter-spacing="0.5">
+        <animate attributeName="opacity" values="1;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1" dur="20s" repeatCount="indefinite"/>
+        Full Stack Developer
+      </text>
+      <text x="480" y="222" font-family="'Courier New', monospace" font-size="16" fill="#2563EB" font-weight="600" letter-spacing="0.5">
+        <animate attributeName="opacity" values="0;0;0;0;1;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0" dur="20s" repeatCount="indefinite"/>
+        Frontend Engineer
+      </text>
+      <text x="480" y="222" font-family="'Courier New', monospace" font-size="16" fill="#06B6D4" font-weight="600" letter-spacing="0.5">
+        <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;1;1;0;0;0;0;0;0;0;0;0;0;0" dur="20s" repeatCount="indefinite"/>
+        Open Source Contributor
+      </text>
+      <text x="480" y="222" font-family="'Courier New', monospace" font-size="16" fill="#7C3AED" font-weight="600" letter-spacing="0.5">
+        <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0;0;0" dur="20s" repeatCount="indefinite"/>
+        UI Engineer
+      </text>
+      <text x="480" y="222" font-family="'Courier New', monospace" font-size="16" fill="#D97706" font-weight="600" letter-spacing="0.5">
+        <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0" dur="20s" repeatCount="indefinite"/>
+        AI Enthusiast
+      </text>
+      <rect x="777" y="207" width="9" height="16" fill="#2563EB">
+        <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <line x1="480" y1="238" x2="1148" y2="238" stroke="rgba(15,23,42,0.08)" stroke-width="1" mask="url(#l-mask-l7)"/>
+
+    <!-- === INFO SECTION === -->
+    <g mask="url(#l-mask-info1)">
+      <text x="480" y="264" font-family="'Courier New', monospace" font-size="10.5" fill="#2563EB">📍</text>
+      <text x="504" y="264" font-family="'Courier New', monospace" font-size="10.5" fill="#475569">location  </text>
+      <text x="590" y="264" font-family="'Courier New', monospace" font-size="10.5" fill="#0F172A">Pune, Maharashtra, India 🇮🇳</text>
+    </g>
+
+    <g mask="url(#l-mask-info2)">
+      <text x="480" y="284" font-family="'Courier New', monospace" font-size="10.5" fill="#2563EB">🎓</text>
+      <text x="504" y="284" font-family="'Courier New', monospace" font-size="10.5" fill="#475569">education </text>
+      <text x="590" y="284" font-family="'Courier New', monospace" font-size="10.5" fill="#0F172A">GCOEJ — Govt. College of Engg., Jalgaon</text>
+    </g>
+
+    <g mask="url(#l-mask-info3)">
+      <text x="480" y="304" font-family="'Courier New', monospace" font-size="10.5" fill="#2563EB">🔭</text>
+      <text x="504" y="304" font-family="'Courier New', monospace" font-size="10.5" fill="#475569">focus     </text>
+      <text x="590" y="304" font-family="'Courier New', monospace" font-size="10.5" fill="#0F172A">Bank Kiosk Conversion Software</text>
+    </g>
+
+    <g mask="url(#l-mask-info4)">
+      <text x="480" y="324" font-family="'Courier New', monospace" font-size="10.5" fill="#2563EB">🌐</text>
+      <text x="504" y="324" font-family="'Courier New', monospace" font-size="10.5" fill="#475569">portfolio </text>
+      <text x="590" y="324" font-family="'Courier New', monospace" font-size="10.5" fill="#2563EB">bhushan-portfolio-five.vercel.app</text>
+    </g>
+
+    <g mask="url(#l-mask-info5)">
+      <text x="480" y="344" font-family="'Courier New', monospace" font-size="10.5" fill="#2563EB">📧</text>
+      <text x="504" y="344" font-family="'Courier New', monospace" font-size="10.5" fill="#475569">email     </text>
+      <text x="590" y="344" font-family="'Courier New', monospace" font-size="10.5" fill="#2563EB">bhushaningale2006@gmail.com</text>
+    </g>
+
+    <line x1="480" y1="360" x2="1148" y2="360" stroke="rgba(15,23,42,0.08)" stroke-width="1" mask="url(#l-mask-skills)"/>
+
+    <!-- === SKILLS SECTION === -->
+    <g mask="url(#l-mask-skills)">
+      <text x="480" y="382" font-family="'Courier New', monospace" font-size="10.5" fill="#475569">$ skills --list</text>
+
+      <!-- Row 1 -->
+      <g filter="url(#l-pill-glow)">
+        <rect x="480" y="393" width="68" height="24" rx="12" fill="url(#l-pill-blue)" stroke="rgba(37,99,235,0.4)" stroke-width="1"/>
+        <text x="514" y="409" text-anchor="middle" font-family="'SF Mono', 'Courier New', monospace" font-size="10" fill="#2563EB" font-weight="600">React</text>
+      </g>
+      <g filter="url(#l-pill-glow)">
+        <rect x="558" y="393" width="72" height="24" rx="12" fill="url(#l-pill-blue)" stroke="rgba(6,182,212,0.4)" stroke-width="1"/>
+        <text x="594" y="409" text-anchor="middle" font-family="'SF Mono', 'Courier New', monospace" font-size="10" fill="#06B6D4" font-weight="600">Next.js</text>
+      </g>
+      <g filter="url(#l-pill-glow)">
+        <rect x="640" y="393" width="72" height="24" rx="12" fill="url(#l-pill-green)" stroke="rgba(16,185,129,0.4)" stroke-width="1"/>
+        <text x="676" y="409" text-anchor="middle" font-family="'SF Mono', 'Courier New', monospace" font-size="10" fill="#10B981" font-weight="600">Node.js</text>
+      </g>
+      <g filter="url(#l-pill-glow)">
+        <rect x="722" y="393" width="90" height="24" rx="12" fill="url(#l-pill-blue)" stroke="rgba(37,99,235,0.4)" stroke-width="1"/>
+        <text x="767" y="409" text-anchor="middle" font-family="'SF Mono', 'Courier New', monospace" font-size="10" fill="#2563EB" font-weight="600">TypeScript</text>
+      </g>
+      <g filter="url(#l-pill-glow)">
+        <rect x="822" y="393" width="74" height="24" rx="12" fill="url(#l-pill-green)" stroke="rgba(16,185,129,0.4)" stroke-width="1"/>
+        <text x="859" y="409" text-anchor="middle" font-family="'SF Mono', 'Courier New', monospace" font-size="10" fill="#10B981" font-weight="600">Tailwind</text>
+      </g>
+      <g filter="url(#l-pill-glow)">
+        <rect x="906" y="393" width="66" height="24" rx="12" fill="url(#l-pill-purple)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+        <text x="939" y="409" text-anchor="middle" font-family="'SF Mono', 'Courier New', monospace" font-size="10" fill="#7C3AED" font-weight="600">Python</text>
+      </g>
+
+      <!-- Row 2 -->
+      <g filter="url(#l-pill-glow)">
+        <rect x="480" y="427" width="68" height="24" rx="12" fill="url(#l-pill-blue)" stroke="rgba(6,182,212,0.4)" stroke-width="1"/>
+        <text x="514" y="443" text-anchor="middle" font-family="'SF Mono', 'Courier New', monospace" font-size="10" fill="#06B6D4" font-weight="600">Docker</text>
+      </g>
+      <g filter="url(#l-pill-glow)">
+        <rect x="558" y="427" width="78" height="24" rx="12" fill="url(#l-pill-green)" stroke="rgba(16,185,129,0.4)" stroke-width="1"/>
+        <text x="597" y="443" text-anchor="middle" font-family="'SF Mono', 'Courier New', monospace" font-size="10" fill="#10B981" font-weight="600">Postgres</text>
+      </g>
+      <g filter="url(#l-pill-glow)">
+        <rect x="646" y="427" width="52" height="24" rx="12" fill="url(#l-pill-purple)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+        <text x="672" y="443" text-anchor="middle" font-family="'SF Mono', 'Courier New', monospace" font-size="10" fill="#7C3AED" font-weight="600">AWS</text>
+      </g>
+      <g filter="url(#l-pill-glow)">
+        <rect x="708" y="427" width="46" height="24" rx="12" fill="url(#l-pill-blue)" stroke="rgba(37,99,235,0.4)" stroke-width="1"/>
+        <text x="731" y="443" text-anchor="middle" font-family="'SF Mono', 'Courier New', monospace" font-size="10" fill="#2563EB" font-weight="600">Git</text>
+      </g>
+      <g filter="url(#l-pill-glow)">
+        <rect x="764" y="427" width="58" height="24" rx="12" fill="url(#l-pill-purple)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+        <text x="793" y="443" text-anchor="middle" font-family="'SF Mono', 'Courier New', monospace" font-size="10" fill="#7C3AED" font-weight="600">Figma</text>
+      </g>
+      <g filter="url(#l-pill-glow)">
+        <rect x="832" y="427" width="50" height="24" rx="12" fill="url(#l-pill-green)" stroke="rgba(16,185,129,0.4)" stroke-width="1"/>
+        <text x="857" y="443" text-anchor="middle" font-family="'SF Mono', 'Courier New', monospace" font-size="10" fill="#10B981" font-weight="600">Java</text>
+      </g>
+      <g filter="url(#l-pill-glow)">
+        <rect x="892" y="427" width="56" height="24" rx="12" fill="url(#l-pill-blue)" stroke="rgba(6,182,212,0.4)" stroke-width="1"/>
+        <text x="920" y="443" text-anchor="middle" font-family="'SF Mono', 'Courier New', monospace" font-size="10" fill="#06B6D4" font-weight="600">Flask</text>
+      </g>
+      <g filter="url(#l-pill-glow)">
+        <rect x="958" y="427" width="58" height="24" rx="12" fill="url(#l-pill-purple)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+        <text x="987" y="443" text-anchor="middle" font-family="'SF Mono', 'Courier New', monospace" font-size="10" fill="#7C3AED" font-weight="600">MySQL</text>
+      </g>
+    </g>
+
+    <line x1="480" y1="465" x2="1148" y2="465" stroke="rgba(15,23,42,0.08)" stroke-width="1" mask="url(#l-mask-socials)"/>
+
+    <!-- === SOCIAL ICONS SECTION === -->
+    <g mask="url(#l-mask-socials)">
+      <text x="480" y="487" font-family="'Courier New', monospace" font-size="10.5" fill="#475569">$ connect --socials</text>
+
+      <g filter="url(#l-pill-glow)">
+        <rect x="480" y="498" width="120" height="36" rx="18" fill="rgba(15,23,42,0.04)" stroke="rgba(15,23,42,0.2)" stroke-width="1"/>
+        <text x="499" y="521" font-family="'Courier New', monospace" font-size="13" fill="#0F172A">⬡</text>
+        <text x="520" y="521" font-family="'SF Mono', 'Courier New', monospace" font-size="11" fill="#0F172A" font-weight="600">GitHub</text>
+      </g>
+
+      <g filter="url(#l-pill-glow)">
+        <rect x="612" y="498" width="120" height="36" rx="18" fill="rgba(37,99,235,0.08)" stroke="rgba(37,99,235,0.3)" stroke-width="1"/>
+        <text x="631" y="521" font-family="'Courier New', monospace" font-size="13" fill="#2563EB">in</text>
+        <text x="650" y="521" font-family="'SF Mono', 'Courier New', monospace" font-size="11" fill="#2563EB" font-weight="600">LinkedIn</text>
+      </g>
+
+      <g filter="url(#l-pill-glow)">
+        <rect x="744" y="498" width="110" height="36" rx="18" fill="rgba(6,182,212,0.08)" stroke="rgba(6,182,212,0.3)" stroke-width="1"/>
+        <text x="761" y="521" font-family="'Courier New', monospace" font-size="13" fill="#06B6D4">𝕏</text>
+        <text x="778" y="521" font-family="'SF Mono', 'Courier New', monospace" font-size="11" fill="#06B6D4" font-weight="600">Twitter</text>
+      </g>
+
+      <g filter="url(#l-pill-glow)">
+        <rect x="866" y="498" width="116" height="36" rx="18" fill="rgba(16,185,129,0.08)" stroke="rgba(16,185,129,0.3)" stroke-width="1"/>
+        <text x="884" y="521" font-family="'Courier New', monospace" font-size="13" fill="#10B981">◈</text>
+        <text x="903" y="521" font-family="'SF Mono', 'Courier New', monospace" font-size="11" fill="#10B981" font-weight="600">Portfolio</text>
+      </g>
+
+      <g filter="url(#l-pill-glow)">
+        <rect x="994" y="498" width="90" height="36" rx="18" fill="rgba(234,67,53,0.06)" stroke="rgba(234,67,53,0.3)" stroke-width="1"/>
+        <text x="1012" y="521" font-family="'Courier New', monospace" font-size="13" fill="#EA4335">✉</text>
+        <text x="1030" y="521" font-family="'SF Mono', 'Courier New', monospace" font-size="11" fill="#EA4335" font-weight="600">Email</text>
+      </g>
+    </g>
+
+    <!-- Right panel status bar -->
+    <rect x="456" y="560" width="712" height="38" fill="rgba(37,99,235,0.04)"/>
+    <text x="476" y="583" font-family="'Courier New', monospace" font-size="9" fill="#10B981">● CONNECTED</text>
+    <text x="570" y="583" font-family="'Courier New', monospace" font-size="9" fill="#475569">UTF-8  •  LF  •  BASH 5.2</text>
+    <text x="900" y="583" font-family="'Courier New', monospace" font-size="9" fill="#7C3AED">Ln 1, Col 1  •  GitHub Ready</text>
+
+    <!-- === MAIN OUTER BORDER SHIMMER === -->
+    <rect x="1" y="1" width="1178" height="608" rx="20" fill="none" stroke="url(#l-border-shimmer)" stroke-width="2"/>
+    <rect x="1" y="1" width="1178" height="608" rx="20" fill="none" stroke="rgba(15,23,42,0.08)" stroke-width="1"/>
+
+    <!-- Corner accent dots -->
+    <circle cx="20" cy="20" r="3" fill="#2563EB" opacity="0.5"><animate attributeName="opacity" values="0.5;0.9;0.5" dur="2s" repeatCount="indefinite"/></circle>
+    <circle cx="1160" cy="20" r="3" fill="#06B6D4" opacity="0.5"><animate attributeName="opacity" values="0.5;0.9;0.5" dur="2s" begin="0.5s" repeatCount="indefinite"/></circle>
+    <circle cx="20" cy="590" r="3" fill="#10B981" opacity="0.5"><animate attributeName="opacity" values="0.5;0.9;0.5" dur="2s" begin="1s" repeatCount="indefinite"/></circle>
+    <circle cx="1160" cy="590" r="3" fill="#7C3AED" opacity="0.5"><animate attributeName="opacity" values="0.5;0.9;0.5" dur="2s" begin="1.5s" repeatCount="indefinite"/></circle>
+
+  </g>
+</svg>
