@@ -79,13 +79,15 @@ I am a passionate **Full Stack Developer** from India 🇮🇳 focused on buildi
 
 ## 📈 **GitHub Analytics**
 
-# 📊 GitHub Stats:
-![](https://github-readme-stats.shion.dev/api?username=2710-bhushan&theme=dark&hide_border=false&include_all_commits=false&count_private=false)<br/>
-![](https://streak-stats.demolab.com/?user=2710-bhushan&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.shion.dev/api/top-langs/?username=2710-bhushan&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
+<div align="center">
 
----
-[![](https://komarev.com/ghpvc/?username=2710-bhushan&icon=0&color=0)](https://visitcount.itsvg.in)
+<img src="https://github-readme-stats.vercel.app/api?username=2710-bhushan&show_icons=true&theme=radical&bg_color=30,0d0d0d,1a1a2e&title_color=38BCF7&text_color=ffffff&icon_color=F8D847&border_radius=15" height="180em" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=2710-bhushan&theme=radical&background=0d0d0d&border=DD2727&currStreakNum=38BCF7&sideNums=38BCF7&currStreakLabel=38BCF7&sideLabels=38BCF7&dates=FFFFFF&border_radius=15" height="180em" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=2710-bhushan&layout=compact&theme=radical&bg_color=30,0d0d0d,1a1a2e&title_color=38BCF7&text_color=ffffff&border_radius=15&langs_count=8" height="180em" />
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=2710-bhushan&theme=react-dark&bg_color=0d1117&hide_border=true&area=true&area_color=38BCF7&line=38BCF7&point=F8D847" alt="Activity Graph" />
+
+</div>
 
 ---
 
